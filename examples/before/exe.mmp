@@ -1,0 +1,31 @@
+// Copyright (c) 2010 Symbian Foundation Ltd.
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of the License "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Symbian Foundation - Initial contribution
+// 
+// Description:
+// MMP file to build the example EXE
+
+#ifdef ARMCC_2_2
+#define TARGETNAME	rvct22_exe.exe		// for checking the RVCT2 compilation
+#endif
+
+
+#ifndef TARGETNAME
+#define TARGETNAME  gcce_exe.exe
+#endif
+
+TARGET TARGETNAME
+TARGETTYPE EXE
+
+SOURCE e32main.cpp
+SOURCE source1.cpp
+
+SYSTEMINCLUDE /epoc32/include
+
+LIBRARY euser.lib
