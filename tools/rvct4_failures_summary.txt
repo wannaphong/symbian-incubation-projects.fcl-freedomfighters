@@ -1,0 +1,383 @@
+
+
+====Occurrences of messages (distinct, all)
+118   	387   	Error: #504-D: nonstandard form for taking the address of a member function
+31    	62    	Error: #904: a function declared XX may not be defined
+30    	420   	Error: #167: argument of type XX is incompatible with parameter of type XX
+22    	97    	Error: #5: cannot open source input file XX: No such file or directory
+14    	28    	Error: #434: a reference of type XX (not const-qualified) cannot be initialized with a value of type XX
+4     	64    	Error: #1561: dllexport/dllimport requires external linkage
+3     	24    	Error: #949-D: specifying a default argument on this declaration is nonstandard
+1     	2     	Error: #245: a nonstatic member reference must be relative to a specific object
+1     	2     	Error: #304: no instance of overloaded function XX matches the argument list
+
+
+====Files affected per message
+22    	Error: #5: cannot open source input file XX: No such file or directory
+19    	Error: #504-D: nonstandard form for taking the address of a member function
+3     	Error: #949-D: specifying a default argument on this declaration is nonstandard
+2     	Error: #904: a function declared XX may not be defined
+2     	Error: #1561: dllexport/dllimport requires external linkage
+1     	Error: #304: no instance of overloaded function XX matches the argument list
+1     	Error: #245: a nonstatic member reference must be relative to a specific object
+1     	Error: #167: argument of type XX is incompatible with parameter of type XX
+1     	Error: #434: a reference of type XX (not const-qualified) cannot be initialized with a value of type XX
+
+
+====Packages impacted (if > 1)
+
+
+====Affected files by package
+1     	epoc32/include
+	1     	/epoc32/include/platform/networking/crypto.h
+1     	sf/adaptation/beagleboard
+	1     	/sf/adaptation/beagleboard/omap3530/beagle_drivers/medwb/medwb.cpp
+1     	sf/app/commonemail
+	20    	/sf/app/commonemail/emailservices/emailclientapi/src/emailmailbox.cpp
+1     	sf/app/devicecontrol
+	1     	/sf/app/devicecontrol/customization/isadapter/src/UiSettingsUtil.cpp
+2     	sf/app/messaging
+	1     	/sf/app/messaging/messagingappbase/obexmtms/btmtm/btclient/source/btcmtm.cpp
+	1     	/sf/app/messaging/messagingappbase/obexmtms/irmtm/irclient/source/Ircmtm.cpp
+1     	sf/app/organizer
+	2     	/sf/app/organizer/calendarui/globaldata/src/calenglobaldata.cpp
+7     	sf/app/photos
+	1     	/sf/app/photos/photosgallery/slideshow/engine/controlsrc/shweffectcontrol.cpp
+	1     	/sf/app/photos/photosgallery/slideshow/engine/controlsrc/shwtimercontrol.cpp
+	3     	/sf/app/photos/photosgallery/slideshow/engine/coresrc/shwthumbnailloader.cpp
+	1     	/sf/app/photos/photosgallery/slideshow/engine/effectsrc/shwzoomandpaneffect.cpp
+	1     	/sf/app/photos/photosgallery/slideshow/view/src/shwslideshowbacklighttimer.cpp
+	3     	/sf/app/photos/photosgallery/slideshow/view/src/shwslideshowview.cpp
+	1     	/sf/app/photos/photosgallery/slideshow/view/src/shwslideshowvolumecontrol.cpp
+1     	sf/app/radio
+	1     	/sf/app/radio/fmradio/fmradio/src/fmradioappui.cpp
+3     	sf/app/videoeditor
+	1     	/sf/app/videoeditor/videditor/VideoEditorCommon/src/VeiVideoEditorSettings.cpp
+	1     	/sf/app/videoeditor/videoeditorengine/vedtranscoder/inc/ctrvideodecoderclient.h
+	1     	/sf/app/videoeditor/videoeditorengine/vedtranscoder/inc/ctrvideoencoderclient.h
+4     	sf/app/videotelephony
+	2     	/sf/app/videotelephony/vtprotocolplugins/VideoSource/src/CVSStillImageDataProvider.cpp
+	6     	/sf/app/videotelephony/vtprotocolplugins/VideoSource/src/cmultiframeprovider.cpp
+	4     	/sf/app/videotelephony/vtuis/videotelui/src/commands/cvtuiprimarycmdpolicy.cpp
+	1     	/sf/app/videotelephony/vtuis/videotelui/src/features/toolbar/cvtuitoolbarcmdpolicy.cpp
+2     	sf/mw/classicui
+	1     	/sf/mw/classicui/commonuisupport/uikon/coresrc/EIKAPP.CPP
+	1     	/sf/mw/classicui/commonuisupport/uikon/coresrc/EIKPROC.CPP
+1     	sf/mw/imghandling
+	1     	/sf/mw/imghandling/imagehandlinglib/Src/CIHLScaler.cpp
+1     	sf/mw/imsrv
+	7     	/sf/mw/imsrv/imservices/ossprotocoladaptation/src/waittimer.cpp
+3     	sf/mw/inputmethods
+	1     	/sf/mw/inputmethods/textinput/peninputgenericvkb/src/peninputgenericlafdatamgr.cpp
+	1     	/sf/mw/inputmethods/textinput/peninputvkbcn/src/peninputvkbcnlafdatamgr.cpp
+	1     	/sf/mw/inputmethods/textinput/peninputvkbkr/src/peninputgenericlafdatamgr.cpp
+4     	sf/mw/ipconnmgmt
+	3     	/sf/mw/ipconnmgmt/alwayson_net_plugin/pdpcontextmanager2/src/caoserver.cpp
+	1     	/sf/mw/ipconnmgmt/apengine/apeng/src/APNetworks.cpp
+	1     	/sf/mw/ipconnmgmt/apengine/apeng/src/APSelect.cpp
+	1     	/sf/mw/ipconnmgmt/apengine/apeng/src/ApProtHandler.cpp
+1     	sf/mw/locationsrv
+	1     	/sf/mw/locationsrv/landmarks/locationlandmarks/dbmanclientlib/src/EPos_HPosLmDatabaseInfo.cpp
+2     	sf/mw/messagingmw
+	1     	/sf/mw/messagingmw/messagingfw/suplsmshandler/src/LbsSuplWdpWatcher.cpp
+	1     	/sf/mw/messagingmw/messagingfw/suplwappushhandler/src/LbsSuplWapPush.cpp
+2     	sf/mw/opensrv
+	3     	/sf/mw/opensrv/libtelepathy/inc/tp-chan-type-search-gen.h
+	1     	/sf/mw/opensrv/libtelepathy/inc/tp-chan-type-text-gen.h
+4     	sf/mw/phonesrv
+	1     	/sf/mw/phonesrv/engines/vmbxengine/src/vmnumber.cpp
+	1     	/sf/mw/phonesrv/phoneclientserver/callui/Inc/CaUiEngine/CaUiEngine.h
+	1     	/sf/mw/phonesrv/phoneclientserver/callui/Src/CaUiEngine/CaUiActiveObject.cpp
+	1     	/sf/mw/phonesrv/phoneclientserver/phoneserver/Src/Ussd/CPhSrvUssdManager.cpp
+2     	sf/mw/svgt
+	30    	/sf/mw/svgt/svgtopt/nvgdecoder/src/TLVIconCreator.cpp
+	30    	/sf/mw/svgt/svgtopt/nvgdecoder/src/TLVRenderer.cpp
+2     	sf/mw/wirelessacc
+	30    	/sf/mw/wirelessacc/hotspotfw/hsserver/inc/802dot11.h
+	15    	/sf/mw/wirelessacc/wlanutilities/wlansniffer/aiplugin/src/wsfaiplugin.cpp
+2     	sf/os/graphics
+	1     	/sf/os/graphics/graphicscomposition/openwfcompositionengine/adaptation/src/Platform/OS/symbian/owfextensions.cpp
+	30    	/sf/os/graphics/graphicscomposition/openwfcompositionengine/composition/src/wfcapi.c
+1     	sf/os/lbs
+	1     	/sf/os/lbs/networkprotocolmodules/suplproxyprotocolmodule/clientapi/suplposmsgplugin/src/lbsrequesthandler.cpp
+2     	sf/os/networkingsrv
+	1     	/sf/os/networkingsrv/networkcontrol/iptransportlayer/src/ipcprups_states.cpp
+	1     	/sf/os/networkingsrv/networkcontrol/qosipscpr/src/ipscpr.cpp
+
+
+====Messages by file
+1     	/epoc32/include/platform/networking/crypto.h
+	87   : Error: #5: cannot open source input file "cryptospidef.h": No such file or directory
+1     	/sf/adaptation/beagleboard/omap3530/beagle_drivers/medwb/medwb.cpp
+	22   : Error: #5: cannot open source input file "locmedia.h": No such file or directory
+20    	/sf/app/commonemail/emailservices/emailclientapi/src/emailmailbox.cpp
+	428  : Error: #504-D: nonstandard form for taking the address of a member function
+	429  : Error: #504-D: nonstandard form for taking the address of a member function
+	430  : Error: #504-D: nonstandard form for taking the address of a member function
+	431  : Error: #504-D: nonstandard form for taking the address of a member function
+	432  : Error: #504-D: nonstandard form for taking the address of a member function
+	433  : Error: #504-D: nonstandard form for taking the address of a member function
+	434  : Error: #504-D: nonstandard form for taking the address of a member function
+	435  : Error: #504-D: nonstandard form for taking the address of a member function
+	436  : Error: #504-D: nonstandard form for taking the address of a member function
+	437  : Error: #504-D: nonstandard form for taking the address of a member function
+	438  : Error: #504-D: nonstandard form for taking the address of a member function
+	439  : Error: #504-D: nonstandard form for taking the address of a member function
+	440  : Error: #504-D: nonstandard form for taking the address of a member function
+	441  : Error: #504-D: nonstandard form for taking the address of a member function
+	442  : Error: #504-D: nonstandard form for taking the address of a member function
+	443  : Error: #504-D: nonstandard form for taking the address of a member function
+	444  : Error: #504-D: nonstandard form for taking the address of a member function
+	445  : Error: #504-D: nonstandard form for taking the address of a member function
+	446  : Error: #504-D: nonstandard form for taking the address of a member function
+	447  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/devicecontrol/customization/isadapter/src/UiSettingsUtil.cpp
+	25   : Error: #5: cannot open source input file "aiscutplugindomaincrkeys.h": No such file or directory
+1     	/sf/app/messaging/messagingappbase/obexmtms/btmtm/btclient/source/btcmtm.cpp
+	37   : Error: #5: cannot open source input file "msvconsts.h": No such file or directory
+1     	/sf/app/messaging/messagingappbase/obexmtms/irmtm/irclient/source/Ircmtm.cpp
+	41   : Error: #5: cannot open source input file "msvconsts.h": No such file or directory
+2     	/sf/app/organizer/calendarui/globaldata/src/calenglobaldata.cpp
+	465  : Error: #504-D: nonstandard form for taking the address of a member function
+	519  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/photos/photosgallery/slideshow/engine/controlsrc/shweffectcontrol.cpp
+	598  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/photos/photosgallery/slideshow/engine/controlsrc/shwtimercontrol.cpp
+	108  : Error: #504-D: nonstandard form for taking the address of a member function
+3     	/sf/app/photos/photosgallery/slideshow/engine/coresrc/shwthumbnailloader.cpp
+	326  : Error: #504-D: nonstandard form for taking the address of a member function
+	332  : Error: #504-D: nonstandard form for taking the address of a member function
+	338  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/photos/photosgallery/slideshow/engine/effectsrc/shwzoomandpaneffect.cpp
+	353  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/photos/photosgallery/slideshow/view/src/shwslideshowbacklighttimer.cpp
+	142  : Error: #504-D: nonstandard form for taking the address of a member function
+3     	/sf/app/photos/photosgallery/slideshow/view/src/shwslideshowview.cpp
+	202  : Error: #504-D: nonstandard form for taking the address of a member function
+	353  : Error: #504-D: nonstandard form for taking the address of a member function
+	457  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/photos/photosgallery/slideshow/view/src/shwslideshowvolumecontrol.cpp
+	235  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/radio/fmradio/fmradio/src/fmradioappui.cpp
+	804  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/videoeditor/videditor/VideoEditorCommon/src/VeiVideoEditorSettings.cpp
+	26   : Error: #5: cannot open source input file "MPMediaPlayerSettings.h": No such file or directory
+1     	/sf/app/videoeditor/videoeditorengine/vedtranscoder/inc/ctrvideodecoderclient.h
+	29   : Error: #5: cannot open source input file "devvideostandardcustominterfaces.h": No such file or directory
+1     	/sf/app/videoeditor/videoeditorengine/vedtranscoder/inc/ctrvideoencoderclient.h
+	36   : Error: #5: cannot open source input file "devvideostandardcustominterfaces.h": No such file or directory
+2     	/sf/app/videotelephony/vtprotocolplugins/VideoSource/src/CVSStillImageDataProvider.cpp
+	808  : Error: #504-D: nonstandard form for taking the address of a member function
+	1099 : Error: #504-D: nonstandard form for taking the address of a member function
+6     	/sf/app/videotelephony/vtprotocolplugins/VideoSource/src/cmultiframeprovider.cpp
+	236  : Error: #504-D: nonstandard form for taking the address of a member function
+	278  : Error: #504-D: nonstandard form for taking the address of a member function
+	520  : Error: #504-D: nonstandard form for taking the address of a member function
+	684  : Error: #504-D: nonstandard form for taking the address of a member function
+	727  : Error: #504-D: nonstandard form for taking the address of a member function
+	809  : Error: #504-D: nonstandard form for taking the address of a member function
+4     	/sf/app/videotelephony/vtuis/videotelui/src/commands/cvtuiprimarycmdpolicy.cpp
+	73   : Error: #504-D: nonstandard form for taking the address of a member function
+	87   : Error: #504-D: nonstandard form for taking the address of a member function
+	101  : Error: #504-D: nonstandard form for taking the address of a member function
+	118  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/app/videotelephony/vtuis/videotelui/src/features/toolbar/cvtuitoolbarcmdpolicy.cpp
+	54   : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/mw/classicui/commonuisupport/uikon/coresrc/EIKAPP.CPP
+	23   : Error: #5: cannot open source input file "apfdef.h": No such file or directory
+1     	/sf/mw/classicui/commonuisupport/uikon/coresrc/EIKPROC.CPP
+	23   : Error: #5: cannot open source input file "apfdef.h": No such file or directory
+1     	/sf/mw/imghandling/imagehandlinglib/Src/CIHLScaler.cpp
+	1240 : Error: #504-D: nonstandard form for taking the address of a member function
+7     	/sf/mw/imsrv/imservices/ossprotocoladaptation/src/waittimer.cpp
+	733  : Error: #504-D: nonstandard form for taking the address of a member function
+	760  : Error: #504-D: nonstandard form for taking the address of a member function
+	772  : Error: #504-D: nonstandard form for taking the address of a member function
+	795  : Error: #504-D: nonstandard form for taking the address of a member function
+	810  : Error: #504-D: nonstandard form for taking the address of a member function
+	994  : Error: #504-D: nonstandard form for taking the address of a member function
+	1026 : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/mw/inputmethods/textinput/peninputgenericvkb/src/peninputgenericlafdatamgr.cpp
+	41   : Error: #949-D: specifying a default argument on this declaration is nonstandard
+1     	/sf/mw/inputmethods/textinput/peninputvkbcn/src/peninputvkbcnlafdatamgr.cpp
+	41   : Error: #949-D: specifying a default argument on this declaration is nonstandard
+1     	/sf/mw/inputmethods/textinput/peninputvkbkr/src/peninputgenericlafdatamgr.cpp
+	42   : Error: #949-D: specifying a default argument on this declaration is nonstandard
+3     	/sf/mw/ipconnmgmt/alwayson_net_plugin/pdpcontextmanager2/src/caoserver.cpp
+	435  : Error: #504-D: nonstandard form for taking the address of a member function
+	436  : Error: #504-D: nonstandard form for taking the address of a member function
+	437  : Error: #504-D: nonstandard form for taking the address of a member function
+1     	/sf/mw/ipconnmgmt/apengine/apeng/src/APNetworks.cpp
+	29   : Error: #5: cannot open source input file "ProtectDB.h": No such file or directory
+1     	/sf/mw/ipconnmgmt/apengine/apeng/src/APSelect.cpp
+	27   : Error: #5: cannot open source input file "ProtectDB.h": No such file or directory
+1     	/sf/mw/ipconnmgmt/apengine/apeng/src/ApProtHandler.cpp
+	25   : Error: #5: cannot open source input file "ProtectDB.h": No such file or directory
+1     	/sf/mw/locationsrv/landmarks/locationlandmarks/dbmanclientlib/src/EPos_HPosLmDatabaseInfo.cpp
+	259  : Error: #245: a nonstatic member reference must be relative to a specific object
+1     	/sf/mw/messagingmw/messagingfw/suplsmshandler/src/LbsSuplWdpWatcher.cpp
+	27   : Error: #5: cannot open source input file "lbsdevloggermacros.h": No such file or directory
+1     	/sf/mw/messagingmw/messagingfw/suplwappushhandler/src/LbsSuplWapPush.cpp
+	28   : Error: #5: cannot open source input file "lbsdevloggermacros.h": No such file or directory
+3     	/sf/mw/opensrv/libtelepathy/inc/tp-chan-type-search-gen.h
+	64   : Error: #1561: dllexport/dllimport requires external linkage
+	106  : Error: #1561: dllexport/dllimport requires external linkage
+	152  : Error: #1561: dllexport/dllimport requires external linkage
+1     	/sf/mw/opensrv/libtelepathy/inc/tp-chan-type-text-gen.h
+	176  : Error: #1561: dllexport/dllimport requires external linkage
+1     	/sf/mw/phonesrv/engines/vmbxengine/src/vmnumber.cpp
+	33   : Error: #5: cannot open source input file "cphonecntfactory.h": No such file or directory
+1     	/sf/mw/phonesrv/phoneclientserver/callui/Inc/CaUiEngine/CaUiEngine.h
+	31   : Error: #5: cannot open source input file "cphcntcontactdataselection.h": No such file or directory
+1     	/sf/mw/phonesrv/phoneclientserver/callui/Src/CaUiEngine/CaUiActiveObject.cpp
+	27   : Error: #5: cannot open source input file "cphonecntfactory.h": No such file or directory
+1     	/sf/mw/phonesrv/phoneclientserver/phoneserver/Src/Ussd/CPhSrvUssdManager.cpp
+	50   : Error: #5: cannot open source input file "telephonyvariant.hrh": No such file or directory
+30    	/sf/mw/svgt/svgtopt/nvgdecoder/src/TLVIconCreator.cpp
+	74   : Error: #504-D: nonstandard form for taking the address of a member function
+	75   : Error: #504-D: nonstandard form for taking the address of a member function
+	76   : Error: #504-D: nonstandard form for taking the address of a member function
+	77   : Error: #504-D: nonstandard form for taking the address of a member function
+	78   : Error: #504-D: nonstandard form for taking the address of a member function
+	79   : Error: #504-D: nonstandard form for taking the address of a member function
+	80   : Error: #504-D: nonstandard form for taking the address of a member function
+	81   : Error: #504-D: nonstandard form for taking the address of a member function
+	82   : Error: #504-D: nonstandard form for taking the address of a member function
+	83   : Error: #504-D: nonstandard form for taking the address of a member function
+	84   : Error: #504-D: nonstandard form for taking the address of a member function
+	85   : Error: #504-D: nonstandard form for taking the address of a member function
+	86   : Error: #504-D: nonstandard form for taking the address of a member function
+	87   : Error: #504-D: nonstandard form for taking the address of a member function
+	88   : Error: #504-D: nonstandard form for taking the address of a member function
+	89   : Error: #504-D: nonstandard form for taking the address of a member function
+	90   : Error: #504-D: nonstandard form for taking the address of a member function
+	91   : Error: #504-D: nonstandard form for taking the address of a member function
+	92   : Error: #504-D: nonstandard form for taking the address of a member function
+	93   : Error: #504-D: nonstandard form for taking the address of a member function
+	94   : Error: #504-D: nonstandard form for taking the address of a member function
+	95   : Error: #504-D: nonstandard form for taking the address of a member function
+	96   : Error: #504-D: nonstandard form for taking the address of a member function
+	97   : Error: #504-D: nonstandard form for taking the address of a member function
+	98   : Error: #504-D: nonstandard form for taking the address of a member function
+	99   : Error: #504-D: nonstandard form for taking the address of a member function
+	100  : Error: #504-D: nonstandard form for taking the address of a member function
+	101  : Error: #504-D: nonstandard form for taking the address of a member function
+	102  : Error: #504-D: nonstandard form for taking the address of a member function
+	103  : Error: #504-D: nonstandard form for taking the address of a member function
+30    	/sf/mw/svgt/svgtopt/nvgdecoder/src/TLVRenderer.cpp
+	54   : Error: #504-D: nonstandard form for taking the address of a member function
+	55   : Error: #504-D: nonstandard form for taking the address of a member function
+	56   : Error: #504-D: nonstandard form for taking the address of a member function
+	57   : Error: #504-D: nonstandard form for taking the address of a member function
+	58   : Error: #504-D: nonstandard form for taking the address of a member function
+	59   : Error: #504-D: nonstandard form for taking the address of a member function
+	60   : Error: #504-D: nonstandard form for taking the address of a member function
+	61   : Error: #504-D: nonstandard form for taking the address of a member function
+	62   : Error: #504-D: nonstandard form for taking the address of a member function
+	63   : Error: #504-D: nonstandard form for taking the address of a member function
+	64   : Error: #504-D: nonstandard form for taking the address of a member function
+	65   : Error: #504-D: nonstandard form for taking the address of a member function
+	66   : Error: #504-D: nonstandard form for taking the address of a member function
+	67   : Error: #504-D: nonstandard form for taking the address of a member function
+	68   : Error: #504-D: nonstandard form for taking the address of a member function
+	69   : Error: #504-D: nonstandard form for taking the address of a member function
+	70   : Error: #504-D: nonstandard form for taking the address of a member function
+	71   : Error: #504-D: nonstandard form for taking the address of a member function
+	72   : Error: #504-D: nonstandard form for taking the address of a member function
+	73   : Error: #504-D: nonstandard form for taking the address of a member function
+	74   : Error: #504-D: nonstandard form for taking the address of a member function
+	75   : Error: #504-D: nonstandard form for taking the address of a member function
+	76   : Error: #504-D: nonstandard form for taking the address of a member function
+	77   : Error: #504-D: nonstandard form for taking the address of a member function
+	78   : Error: #504-D: nonstandard form for taking the address of a member function
+	79   : Error: #504-D: nonstandard form for taking the address of a member function
+	80   : Error: #504-D: nonstandard form for taking the address of a member function
+	81   : Error: #504-D: nonstandard form for taking the address of a member function
+	82   : Error: #504-D: nonstandard form for taking the address of a member function
+	83   : Error: #504-D: nonstandard form for taking the address of a member function
+30    	/sf/mw/wirelessacc/hotspotfw/hsserver/inc/802dot11.h
+	1200 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1205 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1472 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1659 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1669 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1679 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1688 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1699 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1710 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1721 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1732 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1743 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1755 : Error: #167: argument of type "const __packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1778 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1777 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1789 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1788 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1800 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1799 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1811 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1810 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1822 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1821 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1833 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1832 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1844 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1843 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1855 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+	1854 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "TUint16 *"
+	1866 : Error: #167: argument of type "__packed TUint16 *" is incompatible with parameter of type "const TUint16 *"
+15    	/sf/mw/wirelessacc/wlanutilities/wlansniffer/aiplugin/src/wsfaiplugin.cpp
+	641  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	643  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	645  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	647  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	649  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	651  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	653  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	655  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	657  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	659  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	661  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	863  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	865  : Error: #304: no instance of overloaded function "MAiContentObserver::Publish" matches the argument list
+	890  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+	893  : Error: #434: a reference of type "CHsContentPublisher &" (not const-qualified) cannot be initialized with a value of type "CWsfAiPlugin"
+1     	/sf/os/graphics/graphicscomposition/openwfcompositionengine/adaptation/src/Platform/OS/symbian/owfextensions.cpp
+	98   : Error: #904: a function declared "dllimport" may not be defined
+30    	/sf/os/graphics/graphicscomposition/openwfcompositionengine/composition/src/wfcapi.c
+	147  : Error: #904: a function declared "dllimport" may not be defined
+	159  : Error: #904: a function declared "dllimport" may not be defined
+	177  : Error: #904: a function declared "dllimport" may not be defined
+	196  : Error: #904: a function declared "dllimport" may not be defined
+	210  : Error: #904: a function declared "dllimport" may not be defined
+	223  : Error: #904: a function declared "dllimport" may not be defined
+	243  : Error: #904: a function declared "dllimport" may not be defined
+	290  : Error: #904: a function declared "dllimport" may not be defined
+	328  : Error: #904: a function declared "dllimport" may not be defined
+	342  : Error: #904: a function declared "dllimport" may not be defined
+	360  : Error: #904: a function declared "dllimport" may not be defined
+	377  : Error: #904: a function declared "dllimport" may not be defined
+	395  : Error: #904: a function declared "dllimport" may not be defined
+	417  : Error: #904: a function declared "dllimport" may not be defined
+	464  : Error: #904: a function declared "dllimport" may not be defined
+	478  : Error: #904: a function declared "dllimport" may not be defined
+	522  : Error: #904: a function declared "dllimport" may not be defined
+	540  : Error: #904: a function declared "dllimport" may not be defined
+	564  : Error: #904: a function declared "dllimport" may not be defined
+	596  : Error: #904: a function declared "dllimport" may not be defined
+	610  : Error: #904: a function declared "dllimport" may not be defined
+	631  : Error: #904: a function declared "dllimport" may not be defined
+	649  : Error: #904: a function declared "dllimport" may not be defined
+	668  : Error: #904: a function declared "dllimport" may not be defined
+	681  : Error: #904: a function declared "dllimport" may not be defined
+	697  : Error: #904: a function declared "dllimport" may not be defined
+	716  : Error: #904: a function declared "dllimport" may not be defined
+	735  : Error: #904: a function declared "dllimport" may not be defined
+	761  : Error: #904: a function declared "dllimport" may not be defined
+	779  : Error: #904: a function declared "dllimport" may not be defined
+1     	/sf/os/lbs/networkprotocolmodules/suplproxyprotocolmodule/clientapi/suplposmsgplugin/src/lbsrequesthandler.cpp
+	21   : Error: #5: cannot open source input file "netpmutils.h": No such file or directory
+1     	/sf/os/networkingsrv/networkcontrol/iptransportlayer/src/ipcprups_states.cpp
+	29   : Error: #5: cannot open source input file "../../../../commsfw/datacommsserver/esockserver/inc/ss_internal_activities.h": No such file or directory
+1     	/sf/os/networkingsrv/networkcontrol/qosipscpr/src/ipscpr.cpp
+	42   : Error: #5: cannot open source input file "../../../../commsfw/datacommsserver/esockserver/inc/ss_internal_activities.h": No such file or directory

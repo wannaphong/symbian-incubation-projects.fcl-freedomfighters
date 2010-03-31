@@ -262,6 +262,55 @@
 1     	error: impossible constraint in XX
 
 
+====Packages impacted (if > 1)
+7     	/epoc32/include/platform/elements/nm_signatures.h
+	(mw/ipappprotocols, mw/ipconnmgmt, os/bt, os/cellularsrv, os/commsfw, os/networkingsrv, os/wlan)
+7     	/epoc32/include/platform/comms-infras/ss_nodemessages.h
+	(mw/ipappprotocols, mw/ipconnmgmt, os/bt, os/cellularsrv, os/commsfw, os/networkingsrv, os/wlan)
+4     	/epoc32/include/mw/npapi.h
+	(app/homescreen, app/screensaver, mw/svgt, mw/web)
+2     	/epoc32/include/platform/mw/alf/ialfcontainer.h
+	(app/photos, mw/mmuifw)
+2     	/epoc32/include/platform/mw/alf/ialfwidgetcontrol.h
+	(app/photos, mw/mmuifw)
+2     	/epoc32/include/symcpp.h
+	(mw/web, os/ossrv)
+2     	/epoc32/include/stdapis/sys/types.h
+	(app/photos, mw/mmuifw)
+2     	/sf/os/kernelhwsrv/kernel/eka/common/des16.cpp
+	(adaptation/qemu, os/kernelhwsrv)
+2     	/epoc32/include/platform/mw/alf/alfwidgetcontrol.h
+	(app/photos, mw/mmuifw)
+2     	/epoc32/include/platform/mw/mul/imulvarianttype.h
+	(app/photos, mw/mmuifw)
+2     	/sf/os/kernelhwsrv/kernel/eka/common/des8.cpp
+	(adaptation/qemu, os/kernelhwsrv)
+2     	/sf/os/kernelhwsrv/kernel/eka/euser/epoc/arm/uc_huffman.cia
+	(adaptation/qemu, os/kernelhwsrv)
+2     	/epoc32/include/platform/mw/alf/ialfelement.h
+	(app/photos, mw/mmuifw)
+2     	/sf/os/kernelhwsrv/kernel/eka/euser/epoc/arm/uc_utl.cia
+	(adaptation/qemu, os/kernelhwsrv)
+2     	/sf/os/kernelhwsrv/kernel/eka/common/arm/carray.cia
+	(adaptation/qemu, os/kernelhwsrv)
+2     	/epoc32/include/platform/mw/mul/mulvarianttype.h
+	(app/photos, mw/mmuifw)
+2     	/epoc32/include/platform/mw/alf/ialfvarianttype.h
+	(app/photos, mw/mmuifw)
+2     	/epoc32/include/platform/mw/alf/ialfbranch.h
+	(app/photos, mw/mmuifw)
+2     	/epoc32/include/platform/mw/alf/ialfmap.h
+	(app/photos, mw/mmuifw)
+2     	/epoc32/include/platform/kernel/exec_kernel.h
+	(adaptation/qemu, os/kernelhwsrv)
+2     	/epoc32/include/platform/mw/osn/osntypes.h
+	(app/photos, mw/mmuifw)
+2     	/epoc32/include/platform/mw/alf/alfvarianttype.h
+	(app/photos, mw/mmuifw)
+2     	/sf/os/kernelhwsrv/kernel/eka/euser/epoc/arm/uc_i64.cia
+	(adaptation/qemu, os/kernelhwsrv)
+
+
 ====Affected files by package
 26    	epoc32/include
 	9     	/epoc32/include/KHR/khrplatform.h

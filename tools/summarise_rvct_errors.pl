@@ -77,51 +77,41 @@ while ($line = <>)
 		next;
 		}
 
-	# M:/epoc32/include/elements/nm_interfaces.h:255: warning: dereferencing type-punned pointer will break strict-aliasing rules
-	# M:/epoc32/include/f32file.h:2169: warning: invalid access to non-static data member 'TVolFormatParam::iUId'  of NULL object
-	# M:/epoc32/include/f32file.h:2169: warning: (perhaps the 'offsetof' macro was used incorrectly)
-	# M:/epoc32/include/comms-infras/ss_nodemessages.h:301: error: wrong number of template arguments (3, should be 4)
-	# M:/epoc32/include/elements/nm_signatures.h:496: error: provided for 'template<class TSIGNATURE, int PAYLOADATTRIBOFFSET, class TATTRIBUTECREATIONPOLICY, int PAYLOADBUFFERMAXLEN> class Messages::TSignatureWithPolymorphicPayloadMetaType'
-	# M:/epoc32/include/comms-infras/ss_nodemessages.h:301: error: invalid type in declaration before ';' token
+	# &quot;J:/sf/app/commonemail/emailservices/emailclientapi/src/emailmailbox.cpp&quot;, line 49: Warning:  #830-D: function &quot;CBase::operator new(TUint, TLeave)&quot; has no corresponding operator delete (to be called if an exception is thrown during initialization of an allocated object)
 	
-	if ($line =~ /(^...*):(\d+): ([^:]+): (.*)$/)
+	if ($line =~ /^&quot;(...*)&quot;, line (\d+): ([^:]+):\s+([^:]+): (.*)$/)
 		{
 		my $filename = $1;
 		my $lineno = $2;
 		my $messagetype = $3;
-		my $message = $4;
+		my $message_id = $4;
+		my $message = $5;
 		
-		if ($messagetype eq "note")
-			{
-			next;		# ignore notes
-			}
-		if ($messagetype eq "warning" && !$warnings)
+		if ($messagetype eq "Warning" && !$warnings)
 			{
 			next;		# ignore warnings
 			}
 		
 		$filename =~ s/^.://;		# remove drive letter
 		
+		$message =~ s/&quot;/\"/g;
 		$message =~ s/&amp;/&/g;
 		$message =~ s/&gt;/>/g;
 		$message =~ s/&lt;/</g;
 		$message =~ s/&#39;/'/g;
-		my $generic_message = "$messagetype: $message";
+		my $generic_message = "$messagetype: $message_id: $message";
 		$generic_message =~ s/'offsetof'/"offsetof"/;
 		$generic_message =~ s/'([^a-zA-Z])'/"\1"/g;	# don't catch ';' in next substitution
-		$generic_message =~ s/['`][^']+'/XX/g;	# suppress quoted bits of the actual instance
+		$generic_message =~ s/\"[^\"]+\"/XX/g;	# suppress quoted bits of the actual instance
 		
-		my $message_id = $next_message_id;
 		if (!defined $message_ids{$generic_message})
 			{
-			$next_message_id++;
 			$message_ids{$generic_message} = $message_id;
 			$messages_by_id{$message_id} = $generic_message;
 			$all_message_counts{$message_id} = 1;
 			}
 		else
 			{
-			$message_id = $message_ids{$generic_message};
 			$all_message_counts{$message_id} += 1;
 			}
 		my $instance = sprintf("%s:%d: %s-#%d", $filename, $lineno, $messagetype, $message_id);
@@ -166,7 +156,7 @@ while ($line = <>)
 			$files_by_message_id{$message_id} .= "\n$filename";
 			}
 				
-		my $error = sprintf "%-5d: %s: %s", $lineno, $messagetype, $message;
+		my $error = sprintf "%-5d: %s: %s: %s", $lineno, $messagetype, $message_id, $message;
 		if (!defined $errors_by_file{$filename})
 			{
 			$errors_by_file{$filename} = $error;
