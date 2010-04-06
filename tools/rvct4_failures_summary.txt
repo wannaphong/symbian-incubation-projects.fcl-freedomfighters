@@ -381,3 +381,1126 @@
 	29   : Error: #5: cannot open source input file "../../../../commsfw/datacommsserver/esockserver/inc/ss_internal_activities.h": No such file or directory
 1     	/sf/os/networkingsrv/networkcontrol/qosipscpr/src/ipscpr.cpp
 	42   : Error: #5: cannot open source input file "../../../../commsfw/datacommsserver/esockserver/inc/ss_internal_activities.h": No such file or directory
+
+
+====Visibility problems
+app/contacts	Pbk2CommonUI{000a0000}.dso:	CPbk2ControlContainerImpl::HandleLongTapEventL(const TPoint&, const TPoint&)	impacts Pbk2ExNamesListPlugin{000a0000}[0e287528].dll
+app/contacts	Pbk2CommonUI{000a0000}.dso:	CPbk2ControlContainerImpl::HandleLongTapEventL(const TPoint&, const TPoint&)	impacts Pbk2GroupUI{000a0000}[10207280].dll
+app/contacts	Pbk2CommonUI{000a0000}.dso:	CPbk2ControlContainerImpl::HandleLongTapEventL(const TPoint&, const TPoint&)	impacts Pbk2USimUI{000a0000}[101f885f].dll
+app/contacts	Pbk2CommonUI{000a0000}.dso:	CPbk2ControlContainerImpl::HandleLongTapEventL(const TPoint&, const TPoint&)	impacts Phonebook2{000a0000}[101f4cce].exe
+app/contacts	Pbk2CommonUI{000a0000}.dso:	thunk{-52} to CPbk2ControlContainerImpl::HandleLongTapEventL(const TPoint&, const TPoint&)	impacts Pbk2ExNamesListPlugin{000a0000}[0e287528].dll
+app/contacts	Pbk2CommonUI{000a0000}.dso:	thunk{-52} to CPbk2ControlContainerImpl::HandleLongTapEventL(const TPoint&, const TPoint&)	impacts Pbk2GroupUI{000a0000}[10207280].dll
+app/contacts	Pbk2CommonUI{000a0000}.dso:	thunk{-52} to CPbk2ControlContainerImpl::HandleLongTapEventL(const TPoint&, const TPoint&)	impacts Pbk2USimUI{000a0000}[101f885f].dll
+app/contacts	Pbk2CommonUI{000a0000}.dso:	thunk{-52} to CPbk2ControlContainerImpl::HandleLongTapEventL(const TPoint&, const TPoint&)	impacts Phonebook2{000a0000}[101f4cce].exe
+app/contacts	Pbk2Presentation{000a0000}.dso:	CPbk2AttachmentFile::NewL(const TDesC16&, RFs&, unsigned)	impacts Pbk2CmdExt{000a0000}[102823e9].dll
+app/contacts	Pbk2Presentation{000a0000}.dso:	CPbk2AttachmentFile::NewL(const TDesC16&, RFs&, unsigned)	impacts pbk2rclsendbusinesscardplugin{000a0000}[20028718].dll
+app/contacts	Pbk2Presentation{000a0000}.dso:	CPbk2AttachmentFileArray::CPbk2AttachmentFileArray(int)	impacts Pbk2CmdExt{000a0000}[102823e9].dll
+app/contacts	Pbk2Presentation{000a0000}.dso:	CPbk2AttachmentFileArray::CPbk2AttachmentFileArray(int)	impacts pbk2rclsendbusinesscardplugin{000a0000}[20028718].dll
+app/conversations	imcacheclient{000a0000}.dso:	CIMCacheFactory::CreateAccessorL(int, const TDesC16&)	impacts servicewidgetdatapublisher{000a0000}[20021383].dll
+app/conversations	imcacheclient{000a0000}.dso:	CIMCacheFactory::CreateAccessorL(int, const TDesC16&)	impacts vimpstengine{000a0000}[20012421].dll
+app/homescreen	hnpresentationmodel{000a0000}.dso:	CHnSuiteModelContainer::GetLastSuiteModel()	impacts hnengine{000a0000}[2000f8c5].dll
+app/homescreen	hnpresentationmodel{000a0000}.dso:	CHnSuiteModelContainer::GetLastSuiteModel()	impacts hnmetadatamodel{000a0000}[2000f8c7].dll
+app/homescreen	hnpresentationmodel{000a0000}.dso:	CHnSuiteModelContainer::GetParentSuiteModel()	impacts hnengine{000a0000}[2000f8c5].dll
+app/homescreen	hnpresentationmodel{000a0000}.dso:	CHnSuiteModelContainer::GetParentSuiteModel()	impacts hnmetadatamodel{000a0000}[2000f8c7].dll
+app/homescreen	hnpresentationmodel{000a0000}.dso:	CHnSuiteModelContainer::GetSuiteModel(int)	impacts hnengine{000a0000}[2000f8c5].dll
+app/homescreen	hnpresentationmodel{000a0000}.dso:	CHnSuiteModelContainer::GetSuiteModel(int)	impacts hnmetadatamodel{000a0000}[2000f8c7].dll
+app/imgeditor	ImageEditorManager{000a0000}.dso:	CImageEditorPluginManager::SaveAbortL()	impacts ImageEditor{000a0000}[101ffa91].exe
+app/location	mnrefproviderengine{000a0000}.dso:	CMnrpMapModel::GetGrid(CMnrpMapModel::TGrid&) const	impacts mnrefprovider{000a0000}[03132013].exe
+app/messaging	msgeditorappui{000a0000}.dso:	TMsgEditorSettingCacheUpdatePlugin::GetValue(int, int&) const	impacts MsgMailEditor{000a0000}[101f4cd6].exe
+app/messaging	msgeditorappui{000a0000}.dso:	TMsgEditorSettingCacheUpdatePlugin::GetValue(int, int&) const	impacts MsgMailViewer{000a0000}[101f4ce4].exe
+app/messaging	msgeditorappui{000a0000}.dso:	TMsgEditorSettingCacheUpdatePlugin::GetValue(int, int&) const	impacts audiomessage{000a0000}[1020745a].exe
+app/messaging	msgeditorappui{000a0000}.dso:	TMsgEditorSettingCacheUpdatePlugin::GetValue(int, int&) const	impacts mmsviewer{000a0000}[100058df].exe
+app/messaging	msgeditorappui{000a0000}.dso:	TMsgEditorSettingCacheUpdatePlugin::GetValue(int, int&) const	impacts notviewer{000a0000}[101f86a0].exe
+app/messaging	msgeditorappui{000a0000}.dso:	TMsgEditorSettingCacheUpdatePlugin::GetValue(int, int&) const	impacts postcard{000a0000}[10207247].exe
+app/messaging	msgeditorappui{000a0000}.dso:	TMsgEditorSettingCacheUpdatePlugin::GetValue(int, int&) const	impacts smsviewer{000a0000}[100058bd].exe
+app/messaging	msgeditorappui{000a0000}.dso:	TMsgEditorSettingCacheUpdatePlugin::GetValue(int, int&) const	impacts unieditor{000a0000}[102072d8].exe
+app/messaging	senduidatautils{000a0000}.dso:	CSendUiAttachment::NewLC(const CRichText&, RFs&)	impacts drmlinksender{000a0000}[10207387].dll
+app/messaging	senduidatautils{000a0000}.dso:	CSendUiAttachment::NewLC(const CRichText&, RFs&)	impacts genericmtmplugin{000a0000}[102823b7].dll
+app/messaging	uniutils{000a0000}.dso:	CUniBaseHeader::InsertFromL(int)	impacts unieditor{000a0000}[102072d8].exe
+app/mmsharinguis	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts mussettingsui{000a0000}[1028238f].dll
+app/mmsharinguis	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts mussettingsui{000a0000}[1028238f].dll
+app/musicplayer	liwServiceHandler{000a0002}.dso:	CLiwDefaultMap::NewLC(RReadStream&)	impacts musiccontentpublisher{000a0000}[10207c13].dll
+app/musicplayer	mpxcommoncontainer{000f0000}.dso:	CMPXCommonListBoxArrayBase::~CMPXCommonListBoxArrayBase__sub_object()	impacts mpxcollectionviewhg{000f0000}[10207c84].dll
+app/musicplayer	mpxcommoncontainer{000f0000}.dso:	CMPXCommonListBoxArrayBase::~CMPXCommonListBoxArrayBase__sub_object()	impacts mpxcollectionview{000f0000}[101ffc7f].dll
+app/musicplayer	mpxcommoncontainer{000f0000}.dso:	CMPXCommonListBoxArrayBase::~CMPXCommonListBoxArrayBase__sub_object()	impacts mpxpodcastcollectionview{000f0000}[101ffc9a].dll
+app/musicplayer	mpxcommonplaybackview{000f0000}.dso:	CMPXCommonPlaybackViewImp::HandleStatusPaneSizeChange()	impacts mpxembeddedplaybackview{000f0000}[101ffc79].dll
+app/musicplayer	mpxcommonplaybackview{000f0000}.dso:	CMPXCommonPlaybackViewImp::HandleStatusPaneSizeChange()	impacts mpxpdplaybackview{000f0000}[101ffc9d].dll
+app/musicplayer	mpxcommonplaybackview{000f0000}.dso:	CMPXCommonPlaybackViewImp::HandleStatusPaneSizeChange()	impacts mpxpdsbplaybackview{000f0000}[10207bcf].dll
+app/musicplayer	mpxcommonplaybackview{000f0000}.dso:	CMPXCommonPlaybackViewImp::HandleStatusPaneSizeChange()	impacts mpxplaybackview{000f0000}[101ffc70].dll
+app/musicplayer	mpxcommonplaybackview{000f0000}.dso:	CMPXCommonPlaybackViewImp::HandleStatusPaneSizeChange()	impacts mpxpodcastplaybackview{000f0000}[101ffcb8].dll
+app/musicplayer	mpxcommonplaybackview{000f0000}.dso:	CMPXCommonPlaybackViewImp::HandleStatusPaneSizeChange()	impacts mpxupnpplaybackview{000f0000}[101ffc97].dll
+app/organizer	???	RHTTPHeaders::GetField(RStringF, int, THTTPHdrVal&) const	impacts CalDavClient{000a0000}[2002b71f].dll, caldavutils.o
+app/organizer	???	RHTTPMessage::GetHeaderCollection()	impacts CalDavClient{000a0000}[2002b71f].dll, caldavutils.o
+app/organizer	???	RHTTPSession::StringPool() const	impacts CalDavClient{000a0000}[2002b71f].dll, caldavutils.o
+app/organizer	???	RHTTPTransaction::Response() const	impacts CalDavClient{000a0000}[2002b71f].dll, caldavutils.o
+app/organizer	???	RHTTPTransaction::Session() const	impacts CalDavClient{000a0000}[2002b71f].dll, caldavutils.o
+app/organizer	???	THTTPHdrVal::StrF() const	impacts CalDavClient{000a0000}[2002b71f].dll, caldavutils.o
+app/organizer	???	THTTPHdrVal::THTTPHdrVal()	impacts CalDavClient{000a0000}[2002b71f].dll, caldavutils.o
+app/organizer	calencommonutils{000a0000}.dso:	CCalenLocationUtil::IsMapProviderAvailableL()	impacts calendefaulteditors{000a0000}[10207198].dll
+app/organizer	calencommonutils{000a0000}.dso:	CCalenLocationUtil::IsMapProviderAvailableL()	impacts calenviews{000a0000}[10282f26].dll
+app/organizer	calencommonutils{000a0000}.dso:	CCalenLocationUtil::ShowLocationAppendOrReplaceL(RPointerArray<HBufC16>&)	impacts calencontroller{000a0000}[10282f25].dll
+app/organizer	calencommonutils{000a0000}.dso:	CCalenLocationUtil::ShowLocationAppendOrReplaceL(RPointerArray<HBufC16>&)	impacts calendefaulteditors{000a0000}[10207198].dll
+app/organizer	clkuimodel{000a0000}.dso:	CClkUiClkSrvIdleObserver::NewL(MClkModelObserver*, int)	impacts clkdatetimeview{000a0000}[10005906].dll
+app/organizer	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts calengsplugin{000a0000}[1020e8b8].dll
+app/organizer	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts calengsplugin{000a0000}[1020e8b8].dll
+app/phone	PslnFramework{000a0000}.dso:	CPslnFWBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts pslncallimageplugin{000a0000}[102818ee].dll
+app/phone	PslnFramework{000a0000}.dso:	thunk{-88} to CPslnFWBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts pslncallimageplugin{000a0000}[102818ee].dll
+app/phone	avkon{000a0000}.dso:	CAknPhoneNumberEditor::OpenVKB()	impacts dialer{000a0000}[102078ed].dll
+app/photos	glxcommandhandlerbase{000a0000}.dso:	CGlxMpxCommandCommandHandler::DoExecuteL(int, MGlxMediaList&)	impacts glxcommoncommandhandlers{000a0000}[2000719f].dll
+app/photos	glxcommonui{000a0000}.dso:	CGlxBackServiceWrapper::NewL(TUid)	impacts glxcommoncommandhandlers{000a0000}[2000719f].dll
+app/photos	glxcommonui{000a0000}.dso:	CGlxBackServiceWrapper::NewL(TUid)	impacts glxivwr{000a0000}[200104e7].exe
+app/photos	glxcommonui{000a0000}.dso:	CGlxBackServiceWrapper::NewL(TUid)	impacts glx{000a0000}[200009ee].exe
+app/photos	glxfullscreenviewpluginbase{000a0000}.dso:	CGlxFullScreenViewPluginBase::AddCommandHandlersL()	impacts glxfullscreenviewplugin{000a0000}[2000a7c3].dll
+app/photos	glxgridviewpluginbase{000a0000}.dso:	CGlxGridViewPluginBase::AddCommandHandlersL()	impacts glxgridviewplugin{000a0000}[20000a03].dll
+app/photos	glximageviewermanager{000a0000}.dso:	CGlxImageViewerManager::InstanceL()	impacts glxcommoncommandhandlers{000a0000}[2000719f].dll
+app/photos	glximageviewermanager{000a0000}.dso:	CGlxImageViewerManager::InstanceL()	impacts glxivwr{000a0000}[200104e7].exe
+app/photos	glximageviewermanager{000a0000}.dso:	CGlxImageViewerManager::InstanceL()	impacts glxmedialists{000a0000}[200009f0].dll
+app/photos	glximageviewermanager{000a0000}.dso:	CGlxImageViewerManager::InstanceL()	impacts glx{000a0000}[200009ee].exe
+app/photos	libstdcpp{00010000}.dso:	operator delete (void*)	impacts glxdataprovider{000a0000}[200104da].dll
+app/photos	libstdcpp{00010000}.dso:	operator delete (void*)	impacts glxmetadatadialog{000a0000}[20007193].dll
+app/photos	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts glxdataprovider{000a0000}[200104da].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxcloudview{000a0000}[200071ba].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxfullscreenviewpluginbase{000a0000}[2000a770].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxfullscreenviewplugin{000a0000}[2000a7c3].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxfullscreenview{000a0000}[20000a07].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxgridviewpluginbase{000a0000}[2000a76f].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxgridviewplugin{000a0000}[20000a03].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxgridview{000a0000}[200009ef].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxlistviewpluginbase{000a0000}[2000718d].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxlistviewplugin{000a0000}[20000a0b].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxlistview{000a0000}[20000a0d].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxtagsbrowserviewplugin{000a0000}[200071b6].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxviewbase{000a0000}[2000719b].dll
+app/photos	scppnwdl{000a0000}.dso:	operator delete (void*)	impacts glxzoomview{000a0000}[200071cb].dll
+app/videoplayer	cseschedulerclient{000a0000}.dso:	CCseSchedulerApi::GetSchedulesByPluginUid(long, RPointerArray<CCseScheduledProgram>&) const	impacts iptvserver{000a0000}[102750d5].exe
+app/videoplayer	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsvideoplugin{000a0000}[10275068].dll
+app/videoplayer	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsvideoplugin{000a0000}[10275068].dll
+app/voicerec	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts GSVoiceRecorderPlugin{000a0000}[1020729d].dll
+app/voicerec	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts GSVoiceRecorderPlugin{000a0000}[1020729d].dll
+mw/accesssec	eapol{000a0000}.dso:	convert_eap_type_to_u32_t(eap_expanded_type_c)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	convert_eap_type_to_u32_t(eap_expanded_type_c)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	convert_eap_type_to_u32_t(eap_expanded_type_c)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	convert_eap_type_to_u32_t(eap_expanded_type_c)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	convert_eap_type_to_u32_t(eap_expanded_type_c)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::crypto_3des_ede_c(abs_eap_am_tools_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::crypto_3des_ede_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::decrypt_block(const void*, void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::encrypt_block(const void*, void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::get_block_size()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::get_key_length()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::set_decryption_key(const void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::set_encryption_key(const void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::~crypto_3des_ede_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_3des_ede_c::~crypto_3des_ede_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::crypto_aes_c(abs_eap_am_tools_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::crypto_aes_c(abs_eap_am_tools_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::crypto_aes_c(abs_eap_am_tools_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::crypto_aes_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::get_block_size()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::get_block_size()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::get_block_size()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::get_is_valid()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::get_is_valid()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::get_key_length()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::get_key_length()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::get_key_length()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::~crypto_aes_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::~crypto_aes_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::~crypto_aes_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_aes_c::~crypto_aes_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::add_padding_bytes(void*, unsigned long, unsigned char)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::add_padding_bytes(void*, unsigned long, unsigned char)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::aligned_data_length(unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::aligned_data_length(unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::check_padding_bytes(const void*, unsigned long, unsigned char)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::check_padding_bytes(const void*, unsigned long, unsigned char)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::crypto_cbc_c(abs_eap_am_tools_c*, abs_crypto_block_algorithm_c*, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::crypto_cbc_c(abs_eap_am_tools_c*, abs_crypto_block_algorithm_c*, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::crypto_cbc_c(abs_eap_am_tools_c*, abs_crypto_block_algorithm_c*, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::crypto_cbc_c(abs_eap_am_tools_c*, abs_crypto_block_algorithm_c*, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::decrypt_data(void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::decrypt_data(void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::encrypt_data(void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::encrypt_data(void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::finalize_non_aligned()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::get_block_size()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::get_block_size()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::get_is_valid()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::get_is_valid()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::get_is_valid()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::get_tmp_IV()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::get_tmp_IV()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::set_decryption_key(const void*, unsigned long, const void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::set_decryption_key(const void*, unsigned long, const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::set_decryption_key(const void*, unsigned long, const void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::set_encryption_key(const void*, unsigned long, const void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::set_encryption_key(const void*, unsigned long, const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::set_encryption_key(const void*, unsigned long, const void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::update_non_aligned(void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::~crypto_cbc_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::~crypto_cbc_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_cbc_c::~crypto_cbc_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_dsa_c::crypto_dsa_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_dsa_c::init()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_dsa_c::verify(const eap_variable_data_c*, const eap_variable_data_c*, const eap_variable_data_c*, const eap_variable_data_c*, const eap_variable_data_c*, const eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_dsa_c::~crypto_dsa_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::crypto_ephemeral_diffie_hellman_c(abs_eap_am_tools_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::crypto_ephemeral_diffie_hellman_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::generate_diffie_hellman_keys(eap_variable_data_c*, eap_variable_data_c*, const void*, unsigned long, const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::generate_diffie_hellman_keys(eap_variable_data_c*, eap_variable_data_c*, const void*, unsigned long, const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::generate_g_power_to_xy(const eap_variable_data_c*, const eap_variable_data_c*, eap_variable_data_c*, const void*, unsigned long, const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::generate_g_power_to_xy(const eap_variable_data_c*, const eap_variable_data_c*, eap_variable_data_c*, const void*, unsigned long, const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::get_is_valid()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::get_is_valid()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::~crypto_ephemeral_diffie_hellman_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_ephemeral_diffie_hellman_c::~crypto_ephemeral_diffie_hellman_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::crypto_hmac_c(abs_eap_am_tools_c*, abs_crypto_hash_algorithm_c*, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::crypto_hmac_c(abs_eap_am_tools_c*, abs_crypto_hash_algorithm_c*, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::crypto_hmac_c(abs_eap_am_tools_c*, abs_crypto_hash_algorithm_c*, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::crypto_hmac_c(abs_eap_am_tools_c*, abs_crypto_hash_algorithm_c*, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::get_digest_length()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::get_digest_length()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::get_is_valid()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::get_is_valid()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::get_is_valid()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::get_is_valid()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_128_final(void*, unsigned long*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_128_final(void*, unsigned long*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_final(void*, unsigned long*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_final(void*, unsigned long*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_set_key(const eap_variable_data_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_set_key(const eap_variable_data_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_set_key(const eap_variable_data_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_set_key(const eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_update(const void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_update(const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_update(const void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::hmac_update(const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::~crypto_hmac_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::~crypto_hmac_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::~crypto_hmac_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_hmac_c::~crypto_hmac_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_md5_c::copy()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_md5_c::crypto_md5_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_md5_c::get_digest_length()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_md5_c::hash_cleanup()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_md5_c::hash_final(void*, unsigned long*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_md5_c::hash_init()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_md5_c::hash_update(const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_md5_c::~crypto_md5_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_nt_hash_c::crypto_nt_hash_c(abs_eap_am_tools_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_nt_hash_c::get_asymmetric_start_key(const eap_variable_data_c*, eap_variable_data_c*, unsigned long, bool, bool)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_nt_hash_c::get_is_valid()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_nt_hash_c::get_master_key(const eap_variable_data_c*, const eap_variable_data_c*, eap_variable_data_c*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_nt_hash_c::hash_nt_password_hash(const eap_variable_data_c*, eap_variable_data_c*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_nt_hash_c::nt_password_hash(const eap_variable_data_c*, eap_variable_data_c*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_nt_hash_c::~crypto_nt_hash_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::add_rand_seed(const void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::add_rand_seed_hw_ticks()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::crypto_random_c(abs_eap_am_tools_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::crypto_random_c(abs_eap_am_tools_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::crypto_random_c(abs_eap_am_tools_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::crypto_random_c(abs_eap_am_tools_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::crypto_random_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_is_valid()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_is_valid()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_is_valid()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_is_valid()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_rand_bytes(void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_rand_bytes(void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_rand_bytes(void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_rand_bytes(void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_rand_integer(unsigned long, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::get_rand_integer(unsigned long, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::~crypto_random_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::~crypto_random_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::~crypto_random_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::~crypto_random_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_random_c::~crypto_random_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rc4_c::crypto_rc4_c(abs_eap_am_tools_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rc4_c::crypto_rc4_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rc4_c::decrypt_data(const void*, void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rc4_c::encrypt_data(const void*, void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rc4_c::set_key(const eap_variable_data_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rc4_c::~crypto_rc4_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rsa_c::crypto_rsa_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rsa_c::encrypt_with_public_key(const eap_variable_data_c*, const eap_variable_data_c*, eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rsa_c::init()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rsa_c::verify(const eap_variable_data_c*, const eap_variable_data_c*, const eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_rsa_c::~crypto_rsa_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::copy()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::copy()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::crypto_sha1_c(abs_eap_am_tools_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::crypto_sha1_c(abs_eap_am_tools_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::crypto_sha1_c(abs_eap_am_tools_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::crypto_sha1_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::get_digest_length()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::get_digest_length()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::get_is_valid()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::get_is_valid()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_cleanup()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_cleanup()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_final(void*, unsigned long*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_final(void*, unsigned long*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_final(void*, unsigned long*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_final(void*, unsigned long*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_init()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_init()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_init()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_init()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_update(const void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_update(const void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_update(const void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::hash_update(const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::~crypto_sha1_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::~crypto_sha1_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::~crypto_sha1_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha1_c::~crypto_sha1_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha_256_c::crypto_sha_256_c(abs_eap_am_tools_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha_256_c::get_digest_length()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha_256_c::get_is_valid()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha_256_c::hash_cleanup()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha_256_c::hash_final(void*, unsigned long*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha_256_c::hash_init()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha_256_c::hash_update(const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_sha_256_c::~crypto_sha_256_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_prf_c::crypto_tls_prf_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_prf_c::tls_prf_init(const eap_variable_data_c*, const eap_variable_data_c*, const eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_prf_c::tls_prf_output(void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_prf_c::~crypto_tls_prf_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_sha1_prf_c::crypto_tls_sha1_prf_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_sha1_prf_c::get_is_valid()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_sha1_prf_c::tls_prf_init(const eap_variable_data_c*, const eap_variable_data_c*, const eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_sha1_prf_c::tls_prf_output(void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	crypto_tls_sha1_prf_c::~crypto_tls_sha1_prf_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*, const eap_variable_data_c*, const eap_variable_data_c*, unsigned short)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*, const eap_variable_data_c*, const eap_variable_data_c*, unsigned short)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*, const eap_variable_data_c*, const eap_variable_data_c*, unsigned short)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*, const eap_variable_data_c*, const eap_variable_data_c*, unsigned short)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*, const eap_variable_data_c*, const eap_variable_data_c*, unsigned short)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::eap_am_network_id_c(abs_eap_am_tools_c*, const eap_variable_data_c*, const eap_variable_data_c*, unsigned short)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_id() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_id() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_id() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_id() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_id() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_id() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_length() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_destination_length() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid_data() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid_data() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid_data() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid_data() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid_data() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_is_valid_data() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_id() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_id() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_id() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_id() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_id() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_id() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_length() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_length() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_source_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_type() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_type() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_type() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_type() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_type() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::get_type() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::set_copy_of_network_id(const eap_am_network_id_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::set_copy_of_network_id(const eap_am_network_id_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::set_copy_of_network_id(const eap_am_network_id_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::set_copy_of_network_id(const eap_am_network_id_c*)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::set_copy_of_network_id(const eap_am_network_id_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::set_copy_of_network_id(const eap_am_network_id_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::~eap_am_network_id_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::~eap_am_network_id_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::~eap_am_network_id_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::~eap_am_network_id_c()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::~eap_am_network_id_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_am_network_id_c::~eap_am_network_id_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::eap_base_type_c__sub_object(abs_eap_am_tools_c*, abs_eap_base_type_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::eap_base_type_c__sub_object(abs_eap_am_tools_c*, abs_eap_base_type_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::eap_base_type_c__sub_object(abs_eap_am_tools_c*, abs_eap_base_type_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::eap_base_type_c__sub_object(abs_eap_am_tools_c*, abs_eap_base_type_c*)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::eap_base_type_c__sub_object(abs_eap_am_tools_c*, abs_eap_base_type_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::eap_base_type_c__sub_object(abs_eap_am_tools_c*, abs_eap_base_type_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::get_type_partner()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::get_type_partner()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::get_type_partner()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::get_type_partner()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::get_type_partner()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::get_type_partner()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::~eap_base_type_c__sub_object()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::~eap_base_type_c__sub_object()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::~eap_base_type_c__sub_object()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::~eap_base_type_c__sub_object()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::~eap_base_type_c__sub_object()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_base_type_c::~eap_base_type_c__sub_object()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::add_data_to_offset(unsigned long, const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::add_data_to_offset(unsigned long, const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_buffer_length() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_buffer_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_buffer_length() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_buffer_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data(unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data(unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_length() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_offset(unsigned long, unsigned long) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_offset(unsigned long, unsigned long) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_offset(unsigned long, unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_offset(unsigned long, unsigned long) const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_offset(unsigned long, unsigned long) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_data_offset(unsigned long, unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid_data() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid_data() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::get_is_valid_data() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::set_buffer_length(unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::set_data_length(unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::set_data_length(unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::set_data_length(unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::set_data_length(unsigned long)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::set_data_length(unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::set_data_length(unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_base_c::set_do_packet_retransmission(bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*, unsigned char*, unsigned long, bool, bool, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*, unsigned char*, unsigned long, bool, bool, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*, unsigned long)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::eap_buf_chain_wr_c(eap_write_buffer_e, abs_eap_am_tools_c*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::~eap_buf_chain_wr_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::~eap_buf_chain_wr_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::~eap_buf_chain_wr_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_buf_chain_wr_c::~eap_buf_chain_wr_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_core_c::eap_core_c(abs_eap_am_tools_c*, abs_eap_core_c*, bool, const eap_am_network_id_c*, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_core_c::ignore_notifications()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_core_c::reset()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_core_c::send_eap_identity_request(const eap_am_network_id_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_core_c::send_eap_success(const eap_am_network_id_c*, unsigned char)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_core_c::set_partner(abs_eap_core_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::eap_expanded_type_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::eap_expanded_type_c(eap_type_ietf_values_e)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::eap_expanded_type_c(eap_type_ietf_values_e)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::eap_expanded_type_c(eap_type_ietf_values_e)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::eap_expanded_type_c(eap_type_ietf_values_e)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::eap_expanded_type_c(eap_type_ietf_values_e)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::eap_expanded_type_c(eap_type_ietf_values_e)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_eap_expanded_type_size()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_expanded_type_data(abs_eap_am_tools_c*, eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_type_data(abs_eap_am_tools_c*, eap_expanded_type_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_vendor_id() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_vendor_type() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_vendor_type() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_vendor_type() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_vendor_type() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_vendor_type() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::get_vendor_type() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator !=(const eap_expanded_type_c&) const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator !=(const eap_expanded_type_c&) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator !=(eap_type_ietf_values_e) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator !=(eap_type_ietf_values_e) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator !=(eap_type_ietf_values_e) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator &()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator &()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator &()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator &() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator =(const eap_expanded_type_c&)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator =(eap_type_ietf_values_e)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator ==(const eap_expanded_type_c&) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator ==(const eap_expanded_type_c&) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator ==(eap_type_ietf_values_e) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator ==(eap_type_ietf_values_e) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator ==(eap_type_ietf_values_e) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator ==(eap_type_ietf_values_e) const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator ==(eap_type_ietf_values_e) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::operator ==(eap_type_ietf_values_e) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::read_type(abs_eap_am_tools_c*, unsigned long, const void*, unsigned long, eap_expanded_type_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::set_eap_type_values(eap_type_vendor_id_e, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::set_eap_type_values(eap_type_vendor_id_e, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::set_eap_type_values(eap_type_vendor_id_e, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::set_eap_type_values(eap_type_vendor_id_e, unsigned long)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::set_eap_type_values(eap_type_vendor_id_e, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::set_eap_type_values(eap_type_vendor_id_e, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::set_expanded_type_data(abs_eap_am_tools_c*, const eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::write_type(abs_eap_am_tools_c*, unsigned long, void*, unsigned long, bool, eap_expanded_type_c)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::~eap_expanded_type_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::~eap_expanded_type_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::~eap_expanded_type_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::~eap_expanded_type_c()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::~eap_expanded_type_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_expanded_type_c::~eap_expanded_type_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::eap_general_header_base_c__sub_object(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::eap_general_header_base_c__sub_object(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::eap_general_header_base_c__sub_object(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::eap_general_header_base_c__sub_object(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::eap_general_header_base_c__sub_object(abs_eap_am_tools_c*, void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer(unsigned long) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer(unsigned long) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer(unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer(unsigned long) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer(unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer_length() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer_length() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer_length() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer_length() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_buffer_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_offset(unsigned long, unsigned long) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_offset(unsigned long, unsigned long) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_offset(unsigned long, unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_offset(unsigned long, unsigned long) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_header_offset(unsigned long, unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_is_valid() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_is_valid() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_is_valid() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_is_valid() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_is_valid() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::get_is_valid() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::set_header_buffer(unsigned char*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::set_header_buffer(unsigned char*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::set_header_buffer(unsigned char*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::set_header_buffer(unsigned char*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::~eap_general_header_base_c__sub_object()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::~eap_general_header_base_c__sub_object()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::~eap_general_header_base_c__sub_object()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::~eap_general_header_base_c__sub_object()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_general_header_base_c::~eap_general_header_base_c__sub_object()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::check_header() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::check_header() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::eap_header_base_c(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::eap_header_base_c(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::eap_header_base_c(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::eap_header_base_c(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::eap_header_base_c(abs_eap_am_tools_c*, void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::eap_header_base_c(abs_eap_am_tools_c*, void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code_string() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code_string() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code_string() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_code_string() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_data(unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_data_length() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_data_length() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_data_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_expanded_type_field_length()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_expanded_type_field_length()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_header_length()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_header_length()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_header_length()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_header_length()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_header_length()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_identifier() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_identifier() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_identifier() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_identifier() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_identifier() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_identifier() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_ietf_type_field_length()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_length() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_length() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_length() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data(unsigned long) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data(unsigned long) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_length() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_length() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_length() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_length() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_offset(unsigned long, unsigned long) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_offset(unsigned long, unsigned long) const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_start_offset(bool)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_start_offset(bool)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_data_start_offset(bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_field_length() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_field_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_field_length() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_field_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_string() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_string() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_string() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::get_type_string() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_code(eap_code_value_e)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_code(eap_code_value_e)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_code(eap_code_value_e)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_code(eap_code_value_e)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_code(eap_code_value_e)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_code(eap_code_value_e)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_identifier(unsigned char)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_identifier(unsigned char)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_identifier(unsigned char)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_identifier(unsigned char)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_identifier(unsigned char)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_identifier(unsigned char)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_length(unsigned short, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_length(unsigned short, bool)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_length(unsigned short, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_length(unsigned short, bool)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_length(unsigned short, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_length(unsigned short, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_type(eap_expanded_type_c, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_type(eap_expanded_type_c, bool)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_type(eap_expanded_type_c, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_type(eap_expanded_type_c, bool)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_type(eap_expanded_type_c, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::set_type(eap_expanded_type_c, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::~eap_header_base_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::~eap_header_base_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::~eap_header_base_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::~eap_header_base_c()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::~eap_header_base_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_base_c::~eap_header_base_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_rd_c::eap_header_rd_c(abs_eap_am_tools_c*, unsigned char*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_rd_c::eap_header_rd_c(abs_eap_am_tools_c*, unsigned char*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_rd_c::~eap_header_rd_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_rd_c::~eap_header_rd_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::eap_header_string_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::get_eap_code_string(eap_code_value_e)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::get_eap_code_string(eap_code_value_e)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::get_eap_code_string(eap_code_value_e)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::get_eap_code_string(eap_code_value_e)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::get_eap_type_string(eap_expanded_type_c)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::get_eap_type_string(eap_expanded_type_c)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::get_eap_type_string(eap_expanded_type_c)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::get_eap_type_string(eap_expanded_type_c)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_string_c::~eap_header_string_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::eap_header_wr_c(abs_eap_am_tools_c*, unsigned char*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::eap_header_wr_c(abs_eap_am_tools_c*, unsigned char*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::eap_header_wr_c(abs_eap_am_tools_c*, unsigned char*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::eap_header_wr_c(abs_eap_am_tools_c*, unsigned char*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::get_type_data(unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::get_type_data(unsigned long) const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::get_type_data(unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::get_type_data_offset(unsigned long, unsigned long) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::get_type_data_offset(unsigned long, unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::reset_header(unsigned short, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::~eap_header_wr_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::~eap_header_wr_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::~eap_header_wr_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_header_wr_c::~eap_header_wr_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_htonl(unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_htonl(unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_htonll(unsigned long long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_htonll(unsigned long long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_htons(unsigned short)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_htons(unsigned short)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_htons(unsigned short)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_htons(unsigned short)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::eap_master_session_key_c(abs_eap_am_tools_c*, eap_expanded_type_c)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::eap_master_session_key_c(abs_eap_am_tools_c*, eap_expanded_type_c)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::eap_master_session_key_c(abs_eap_am_tools_c*, eap_expanded_type_c)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::eap_master_session_key_c(abs_eap_am_tools_c*, eap_expanded_type_c)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::eap_master_session_key_c(abs_eap_am_tools_c*, eap_expanded_type_c)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::~eap_master_session_key_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::~eap_master_session_key_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::~eap_master_session_key_c()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::~eap_master_session_key_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_master_session_key_c::~eap_master_session_key_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_network_id_selector_c::eap_network_id_selector_c(abs_eap_am_tools_c*, const eap_am_network_id_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_network_id_selector_c::eap_network_id_selector_c(abs_eap_am_tools_c*, const eap_am_network_id_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_network_id_selector_c::~eap_network_id_selector_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_network_id_selector_c::~eap_network_id_selector_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_read_u16_t_network_order(const void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_read_u16_t_network_order(const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_read_u16_t_network_order(const void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_read_u16_t_network_order(const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_read_u24_t_network_order(const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_read_u32_t_network_order(const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_read_u32_t_network_order(const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_expanded_type_c, unsigned long, unsigned long, unsigned char, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_expanded_type_c, unsigned long, unsigned long, unsigned char, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_expanded_type_c, unsigned long, unsigned long, unsigned char, bool)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_expanded_type_c, unsigned long, unsigned long, unsigned char, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_expanded_type_c, unsigned long, unsigned long, unsigned char, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_type_ietf_values_e, unsigned long, unsigned long, unsigned char, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_type_ietf_values_e, unsigned long, unsigned long, unsigned char, bool)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_type_ietf_values_e, unsigned long, unsigned long, unsigned char, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_type_ietf_values_e, unsigned long, unsigned long, unsigned char, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_eap_e, eap_protocol_layer_e, eap_type_ietf_values_e, unsigned long, unsigned long, unsigned char, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_generic_e, eap_protocol_layer_e, unsigned long, unsigned long, unsigned long, unsigned char, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_generic_e, eap_protocol_layer_e, unsigned long, unsigned long, unsigned long, unsigned char, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_generic_e, eap_protocol_layer_e, unsigned long, unsigned long, unsigned long, unsigned char, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::eap_state_notification_c(abs_eap_am_tools_c*, const eap_am_network_id_c*, bool, eap_state_notification_generic_e, eap_protocol_layer_e, unsigned long, unsigned long, unsigned long, unsigned char, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_allow_send_eap_success() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_allow_send_eap_success() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_allow_send_eap_success() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_allow_send_eap_success() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_authentication_error() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_authentication_error() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_authentication_error() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_authentication_error() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_current_state() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_current_state() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_current_state() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_current_state() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_current_state_string() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_current_state_string() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_current_state_string() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_current_state_string() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_eap_identifier() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_eap_identifier() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_eap_identifier() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_eap_identifier() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_eap_type() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_eap_type() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_eap_type() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_eap_type() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_is_client() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_is_client() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_is_client() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_is_client() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_needs_confirmation_from_user() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_needs_confirmation_from_user() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_needs_confirmation_from_user() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_needs_confirmation_from_user() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_notification_string() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_notification_string() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_notification_string() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_notification_string() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_previous_state() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_previous_state() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_previous_state() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_previous_state() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_previous_state_string() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_previous_state_string() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_previous_state_string() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_previous_state_string() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_layer() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_layer() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_layer() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_layer() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_layer_string() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_layer_string() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_layer_string() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_layer_string() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_string() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_string() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_string() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_protocol_string() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_send_network_id() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_send_network_id() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_send_network_id() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_send_network_id() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::get_state_string(unsigned long, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_authentication_error(eap_status_e)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_authentication_error(eap_status_e)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_authentication_error(eap_status_e)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_authentication_error(eap_status_e)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_authentication_error(eap_status_e)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_authentication_error(eap_status_e)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_notification_string(const eap_variable_data_c*, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_notification_string(const eap_variable_data_c*, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_notification_string(const eap_variable_data_c*, bool)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_notification_string(const eap_variable_data_c*, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::set_notification_string(const eap_variable_data_c*, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::~eap_state_notification_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::~eap_state_notification_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::~eap_state_notification_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::~eap_state_notification_c()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::~eap_state_notification_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_state_notification_c::~eap_state_notification_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_static_expanded_type_c::get_type() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_static_expanded_type_c::get_type() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_static_expanded_type_c::get_type() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::eap_status_string_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::eap_status_string_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::eap_status_string_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::eap_status_string_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::get_status_string(eap_status_e)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::get_status_string(eap_status_e)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::get_status_string(eap_status_e)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::get_status_string(eap_status_e)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::~eap_status_string_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::~eap_status_string_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::~eap_status_string_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_status_string_c::~eap_status_string_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_type() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_type() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_type() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_value(unsigned long) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_value(unsigned long) const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_value(unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_value_length() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_value_length() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_header_c::get_value_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::add_message_data(unsigned long, unsigned long, const void*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::add_message_data(unsigned long, unsigned long, const void*)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::add_message_data(unsigned long, unsigned long, const void*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::eap_tlv_message_data_c(abs_eap_am_tools_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::eap_tlv_message_data_c(abs_eap_am_tools_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::eap_tlv_message_data_c(abs_eap_am_tools_c*)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::eap_tlv_message_data_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::parse_message_data(eap_array_c<eap_tlv_header_c>*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::parse_message_data(eap_array_c<eap_tlv_header_c>*)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::parse_message_data(eap_array_c<eap_tlv_header_c>*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::~eap_tlv_message_data_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::~eap_tlv_message_data_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::~eap_tlv_message_data_c()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_tlv_message_data_c::~eap_tlv_message_data_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const eap_variable_data_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const eap_variable_data_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const eap_variable_data_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const eap_variable_data_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const void*, unsigned long)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data(const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::add_data_to_offset(unsigned long, const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::compare(const eap_variable_data_c*) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::compare(const eap_variable_data_c*) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::compare(const eap_variable_data_c*) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::compare(const eap_variable_data_c*) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::compare(const void*, unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::copy() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::copy() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::copy() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::copy() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::eap_variable_data_c(abs_eap_am_tools_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::eap_variable_data_c(abs_eap_am_tools_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::eap_variable_data_c(abs_eap_am_tools_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::eap_variable_data_c(abs_eap_am_tools_c*)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::eap_variable_data_c(abs_eap_am_tools_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::eap_variable_data_c(abs_eap_am_tools_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_buffer(unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_buffer(unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_buffer_length() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_buffer_length() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_buffer_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_buffer_length() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_buffer_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data(unsigned long) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data(unsigned long) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data(unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data(unsigned long) const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data(unsigned long) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data(unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_length() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_length() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_length() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_length() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_length() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_length() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_offset(unsigned long, unsigned long) const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_offset(unsigned long, unsigned long) const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_offset(unsigned long, unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_offset(unsigned long, unsigned long) const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_data_offset(unsigned long, unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid_data() const	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid_data() const	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid_data() const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid_data() const	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid_data() const	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::get_is_valid_data() const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::hash(unsigned long) const	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::hash(unsigned long) const	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::init(unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::init(unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::init(unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::reset()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::reset()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::reset()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::reset()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::reset()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::reset()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(const eap_variable_data_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(const void*, unsigned long, bool, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(const void*, unsigned long, bool, bool)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(const void*, unsigned long, bool, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(const void*, unsigned long, bool, bool)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(const void*, unsigned long, bool, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(const void*, unsigned long, bool, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(void*, unsigned long, bool, bool)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(void*, unsigned long, bool, bool)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(void*, unsigned long, bool, bool)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(void*, unsigned long, bool, bool)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(void*, unsigned long, bool, bool)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer(void*, unsigned long, bool, bool)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer_length(unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer_length(unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer_length(unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer_length(unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_buffer_length(unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const eap_variable_data_c*)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const eap_variable_data_c*)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const eap_variable_data_c*)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const eap_variable_data_c*)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const eap_variable_data_c*)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const eap_variable_data_c*)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const void*, unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const void*, unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const void*, unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const void*, unsigned long)	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const void*, unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_copy_of_buffer(const void*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_data_length(unsigned long)	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_data_length(unsigned long)	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_data_length(unsigned long)	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_data_length(unsigned long)	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_data_length(unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_is_valid()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_is_valid()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::set_is_valid()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::~eap_variable_data_c()	impacts eapaka{000a0000}[102073c1].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::~eap_variable_data_c()	impacts eapmschapv2{000a0000}[101f8e66].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::~eap_variable_data_c()	impacts eapprotectedsetup{000a0000}[2000b003].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::~eap_variable_data_c()	impacts eapsecurid{000a0000}[101f8e74].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::~eap_variable_data_c()	impacts eapsim{000a0000}[101f8e49].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_variable_data_c::~eap_variable_data_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_write_u16_t_network_order(void*, unsigned long, unsigned short)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_write_u24_t_network_order(void*, unsigned long, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eap_write_u32_t_network_order(void*, unsigned long, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eapol_header_base_c::set_data_length(unsigned short)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eapol_header_wr_c::eapol_header_wr_c(abs_eap_am_tools_c*, unsigned char*, unsigned long)	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/accesssec	eapol{000a0000}.dso:	eapol_header_wr_c::~eapol_header_wr_c()	impacts eaptlspeap{000a0000}[101f8e4c].dll
+mw/appsupport	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts GSRFSPlugin{000a0000}[10275117].dll
+mw/appsupport	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsaccessoryplugin{000a0000}[1020743c].dll
+mw/appsupport	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gssensorplugin{000a0000}[10282dec].dll
+mw/appsupport	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts GSRFSPlugin{000a0000}[10275117].dll
+mw/appsupport	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsaccessoryplugin{000a0000}[1020743c].dll
+mw/appsupport	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gssensorplugin{000a0000}[10282dec].dll
+mw/btservices	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts BtuiPlugin{000a0000}[1020742b].dll
+mw/btservices	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts bthidkbdsettings{000a0000}[2001e30b].dll
+mw/btservices	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts BtuiPlugin{000a0000}[1020742b].dll
+mw/btservices	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts bthidkbdsettings{000a0000}[2001e30b].dll
+mw/btservices	remconcoreapi{000a0000}.dso:	MRemConCoreApiControllerObserver::MrccacoResponse(TRemConCoreApiOperationId, int)	impacts btrcc{000a0000}[10208978].dll
+mw/classicui	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts akncompags{000a0000}[20011149].dll
+mw/classicui	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts akncompags{000a0000}[20011149].dll
+mw/drm	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts drmsettingsplugin{000a0000}[102750cc].dll
+mw/drm	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts drmsettingsplugin{000a0000}[102750cc].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsautokeyguardplugin{000a0000}[200110f0].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gscallbarringplugin{000a0000}[102824a5].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gscalldivertplugin{000a0000}[102824a3].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gscallplugin{000a0000}[102824a1].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsdatacallplugin{000a0000}[10207437].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsdisplayplugin{000a0000}[10207440].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsnetworkplugin{000a0000}[102824a7].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsopticaljoystickplugin{000a0000}[1028331a].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gspowersavingqueryplugin{000a0000}[2002120c].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsautokeyguardplugin{000a0000}[200110f0].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gscallbarringplugin{000a0000}[102824a5].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gscalldivertplugin{000a0000}[102824a3].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gscallplugin{000a0000}[102824a1].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsdatacallplugin{000a0000}[10207437].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsdisplayplugin{000a0000}[10207440].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsnetworkplugin{000a0000}[102824a7].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gsopticaljoystickplugin{000a0000}[1028331a].dll
+mw/gsprofilesrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gspowersavingqueryplugin{000a0000}[2002120c].dll
+mw/imsrv	imdatamodel{000a0000}.dso:	CConversationSubscriptionItem::SetConversationInfoL(CImConversationInfoImp*)	impacts imoperation{000a0000}[20015a11].dll
+mw/inputmethods	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts GSLangPlugin{000a0000}[10275066].dll
+mw/inputmethods	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gspeninputplugin{000a0000}[1027510b].dll
+mw/inputmethods	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts GSLangPlugin{000a0000}[10275066].dll
+mw/inputmethods	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gspeninputplugin{000a0000}[1027510b].dll
+mw/inputmethods	peninputcommonctrls{000a0000}.dso:	CAknFepCtrlCommonButton::CancelPointerDownL()	impacts peninputgenericitut{000a0000}[2000b0ff].dll
+mw/inputmethods	peninputcommonctrls{000a0000}.dso:	CPeninputVkbCtrlExt::CPeninputVkbCtrlExt(const TRect&, CFepUiLayout*, int, const TFontSpec&, int)	impacts peninputvkbjp{000a0000}[1028241a].dll
+mw/inputmethods	peninputlayoutcontrol{000a0000}.dso:	CFepLayoutChoiceList::ItemByIndex(int)	impacts peninputcommonctrls{000a0000}[10281859].dll
+mw/ipappsrv	natconfw{000a0000}.dso:	CNATFWConnectivityApi::RegisterObserverForEventsL(MNATFWConnectivityObserver&, unsigned short)	impacts natfwsdpprovider{000a0000}[1028311a].dll
+mw/ipappsrv	natconfw{000a0000}.dso:	CNATFWConnectivityApi::UnregisterObserverForEvents(MNATFWConnectivityObserver&, unsigned short)	impacts natfwsdpprovider{000a0000}[1028311a].dll
+mw/ipappsrv	natfwunsafprotocols{000a0000}.dso:	CNATFWUNSAFServerResolver::CancelResolving()	impacts natfwstunclient{000a0000}[10275432].dll
+mw/ipappsrv	natfwunsafprotocols{000a0000}.dso:	CNATFWUNSAFServerResolver::ResolveL(const TDesC8&, const TDesC8&, const TDesC8&, unsigned, RArray<TInetAddr>&)	impacts natfwstunclient{000a0000}[10275432].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMAServiceCapabilities::SetSuplReportingCap(TOMASuplReportingCap)	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMAServiceCapabilities::SetSuplServiceSupported(TOMASuplServiceSupported)	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMAServiceCapabilities::SetSuplSessionCapabilities(TOMASuplSessionCapabilities)	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMAServiceCapabilities::TOMAServiceCapabilities()	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMASuplHistoricReporting::TOMASuplHistoricReporting()	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMASuplSessionCapabilities::GetMaxNumberPeriodicSessions(signed char&) const	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMASuplSessionCapabilities::GetMaxNumberTotalSessions(int&) const	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMASuplSessionCapabilities::GetMaxNumberTriggeredSessions(signed char&) const	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMASuplSessionCapabilities::SetMaxNumberPeriodicSessions(signed char)	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMASuplSessionCapabilities::SetMaxNumberTotalSessions(int)	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMASuplSessionCapabilities::SetMaxNumberTriggeredSessions(signed char)	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	epos_comasuplasnplugin{000a0000}.dso:	TOMASuplSessionCapabilities::TOMASuplSessionCapabilities()	impacts eposomasuplprotocolhandler2{000a0000}[200255d8].dll
+mw/locationsrv	lbt{000a0000}.dso:	CLbtTriggerInfo::CLbtTriggerInfo()	impacts lbtcontainer{000a0000}[10283131].dll
+mw/locationsrv	locsysuiview{000a0000}.dso:	CLocPosSettings::NewL()	impacts locsysuiengine{000a0000}[10207463].dll
+mw/mds	mdeclient{000a0000}.dso:	CMdEHarvesterSession::ChangeCDriveMediaId()	impacts harvesterserver{000a0000}[200009f5].exe
+mw/mds	mdeclient{000a0000}.dso:	CMdEHarvesterSession::CheckMassStorageMediaId(unsigned long)	impacts harvesterserver{000a0000}[200009f5].exe
+mw/mmuifw	alfwidgetmodel{000a0000}.dso:	Alf::AlfWidget::removeWidget(int)	impacts mulcoverflowwidget{000a0000}[2000d240].dll
+mw/mmuifw	drtaeabi{000a0000}.dso:	std::uncaught_exception()	impacts mulcoverflowwidget{000a0000}[2000d240].dll
+mw/mmuifw	drtaeabi{000a0000}.dso:	std::uncaught_exception()	impacts muldatamodel{000a0000}[2000d247].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts alfcontainerwidget{000a0000}[200100fe].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts alfresourcepool{000a0000}[200110f7].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts alfscrollbarwidget{000a0000}[20010105].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts alfviewwidget{000a0000}[20010103].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts alfwidgetfactory{000a0000}[10282329].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts alfwidgetmodel{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts alfwidgetutils{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts mulcoverflowwidget{000a0000}[2000d240].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts muldatamodelplugin{000a0000}[2000d23e].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts muldatamodel{000a0000}[2000d247].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts mulmodelutility{000a0000}[2000d246].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts mulsliderwidget{000a0000}[2000fa7f].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts mulutility{000a0000}[2000fa83].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete (void*)	impacts osncore{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator delete[] (void*)	impacts alfwidgetmodel{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts alfresourcepool{000a0000}[200110f7].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts alfviewwidget{000a0000}[20010103].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts alfwidgetmodel{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts mulcoverflowwidget{000a0000}[2000d240].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts muldatamodel{000a0000}[2000d247].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts mulmodelutility{000a0000}[2000d246].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts mulsliderwidget{000a0000}[2000fa7f].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts mulutility{000a0000}[2000fa83].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts osncore{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts alfresourcepool{000a0000}[200110f7].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts alfviewwidget{000a0000}[20010103].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts mulcoverflowwidget{000a0000}[2000d240].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts muldatamodel{000a0000}[2000d247].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts mulmodelutility{000a0000}[2000d246].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts mulsliderwidget{000a0000}[2000fa7f].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts mulutility{000a0000}[2000fa83].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts osncore{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::__stl_throw_out_of_range(const char*)	impacts alfresourcepool{000a0000}[200110f7].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::invalid_argument::invalid_argument(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts alfresourcepool{000a0000}[200110f7].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::invalid_argument::invalid_argument(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts muldatamodel{000a0000}[2000d247].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::invalid_argument::invalid_argument(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts mulmodelutility{000a0000}[2000d246].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::invalid_argument::invalid_argument(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts osncore{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::invalid_argument::~invalid_argument()	impacts alfresourcepool{000a0000}[200110f7].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::invalid_argument::~invalid_argument()	impacts muldatamodel{000a0000}[2000d247].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::invalid_argument::~invalid_argument()	impacts mulmodelutility{000a0000}[2000d246].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::invalid_argument::~invalid_argument()	impacts osncore{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::logic_error::logic_error(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts mulcoverflowwidget{000a0000}[2000d240].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::logic_error::logic_error(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts muldatamodel{000a0000}[2000d247].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::logic_error::logic_error(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts mulsliderwidget{000a0000}[2000fa7f].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::logic_error::logic_error(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts mulutility{000a0000}[2000fa83].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::logic_error::~logic_error()	impacts mulcoverflowwidget{000a0000}[2000d240].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::logic_error::~logic_error()	impacts muldatamodel{000a0000}[2000d247].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::logic_error::~logic_error()	impacts mulsliderwidget{000a0000}[2000fa7f].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::logic_error::~logic_error()	impacts mulutility{000a0000}[2000fa83].dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::out_of_range::out_of_range(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&)	impacts osncore{000a0000}.dll
+mw/mmuifw	libstdcpp{00010000}.dso:	std::out_of_range::~out_of_range()	impacts osncore{000a0000}.dll
+mw/remoteconn	???	CMTPDataProviderController::NeedEnumeratingPhase2() const	impacts mtpfiledp{000a0000}[102827a5].dll, cmtpfiledp.o
+mw/remoteconn	???	CMTPDataProviderController::SetNeedEnumeratingPhase2(int)	impacts mtpdataproviderutility{000a0000}[10282fc9].dll, cmtpfsenumerator.o
+mw/remoteconn	???	CMTPFSEnumerator::StartL(unsigned long, int)	impacts mtpdevicedp{000a0000}[102827a4].dll, cmtpdevicedp.o
+mw/remoteconn	???	CMTPFSEnumerator::StartL(unsigned long, int)	impacts mtpfiledp{000a0000}[102827a5].dll, cmtpfiledp.o
+mw/securitysrv	???	__ARM_switch8	impacts WimServer{000a0000}[101f79dd].exe, wimi.o
+mw/securitysrv	gsframework{000a0000}.dso:	CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gssimsecplugin{000a0000}[10207438].dll
+mw/securitysrv	gsframework{000a0000}.dso:	thunk{-88} to CGSBaseView::HandleListBoxEventL(CEikListBox*, MEikListBoxObserver::TListBoxEvent)	impacts gssimsecplugin{000a0000}[10207438].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gAddChild	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gAddRef	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gAlignNode	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gAnimate	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gCreateBackground	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gCreateCamera	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gCreateLoader	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gDecodeData	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gDeleteObject	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gDeleteRef	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetActiveCamera	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetAppearance	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetBackground	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetChild	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetChildCount	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetClass	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetLoadedObjects	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetOrientation	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetPolygonMode	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetReferences	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetTranslation	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gGetUserID	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gIdentityMatrix	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gPostRotate	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gPostRotateMatrix	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetActiveCamera	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetActiveInterval	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetBackground	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetBgEnable	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetCulling	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetOrientation	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetPerspective	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetPolygonMode	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetPosition	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetTransform	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gSetTranslation	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gTransformVec4	impacts hitchcock{000a0000}[a48a362e].dll
+mw/uiaccelerator	m3gcore{000a0000}.dso:	m3gTranslate	impacts hitchcock{000a0000}[a48a362e].dll
+mw/vpnclient	???	CPkcs10Req::CPkcs10Req()	impacts pkiserviceapi{000a0000}[101fae06].dll, pkiserviceapi.o
+mw/vpnclient	ikeutils{000a0000}.dso:	PFKeyExtDataUtil::BuildUdpEncExtensionData(TDes8&, unsigned long, int, int, unsigned short, unsigned short, const TInetAddr&, const TInetAddr&)	impacts ikev1lib{000a0000}[10206994].dll
+mw/vpnclient	ikeutils{000a0000}.dso:	PFKeyExtDataUtil::BuildUdpEncExtensionData(TDes8&, unsigned long, int, int, unsigned short, unsigned short, const TInetAddr&, const TInetAddr&)	impacts ikev2lib{000a0000}[10206993].dll
+mw/vpnclient	ikeutils{000a0000}.dso:	TIpsecSAData::TIpsecSAData()	impacts ikev1lib{000a0000}[10206994].dll
+mw/vpnclient	ikeutils{000a0000}.dso:	TIpsecSAData::TIpsecSAData()	impacts ikev2lib{000a0000}[10206993].dll
+mw/vpnclient	ikeutils{000a0000}.dso:	VPNAddrInfo::BuildVPNAddrInfo(const CInternalAddress*, const TInetAddr&, TVPNAddress&, MIkeDebug&)	impacts ikev1lib{000a0000}[10206994].dll
+mw/web	HttpDMServEng{000a0000}.dso:	CHttpDownloadManagerServerEngine::ActiveDownloads() const	impacts DownloadMgr{000a0000}[10008d5f].dll
+mw/web	JavaScriptCore{000a0000}.dso:	KJS::Interpreter::initGlobalObject()	impacts browserengine{000a0000}[101f8712].dll
+mw/web	JavaScriptCore{000a0000}.dso:	KJS::Interpreter::~Interpreter()	impacts browserengine{000a0000}[101f8712].dll
+mw/web	JavaScriptCore{000a0000}.dso:	KJS::jsNumberCell(double)	impacts jsdevice{000a0000}[a0281418].dll
+mw/web	JavaScriptCore{000a0000}.dso:	_NPN_DeallocateObject	impacts browserengine{000a0000}[101f8712].dll
+mw/web	JavaScriptCore{000a0000}.dso:	_NPN_ReleaseObject	impacts browserengine{000a0000}[101f8712].dll
+mw/web	cXmlParser{000a0000}.dso:	NW_Encoder_StringTable_new	impacts wmlEngine{000a0000}[1028190f].dll
+mw/web	drtaeabi{000a0000}.dso:	abort	impacts JavaScriptCore{000a0000}[10281b70].dll
+mw/web	drtaeabi{000a0000}.dso:	abort	impacts browserengine{000a0000}[101f8712].dll
+mw/web	drtaeabi{000a0000}.dso:	abort	impacts jsdevice{000a0000}[a0281418].dll
+mw/web	webkitutils{000a0000}.dso:	sqlite3SymbianLibFinalize()	impacts browserengine{000a0000}[101f8712].dll
+mw/web	webkitutils{000a0000}.dso:	sqlite3SymbianLibInit()	impacts browserengine{000a0000}[101f8712].dll
+os/devicesrv	accpolicy{000a0000}.dso:	CAccPolObjectBase::~CAccPolObjectBase__sub_object()	impacts accpolaudiodevicetopology{000a0000}[20010142].dll
+os/devicesrv	accpolicy{000a0000}.dso:	CAccPolObjectCon::~CAccPolObjectCon__sub_object()	impacts accpolaudiodevicetopology{000a0000}[20010142].dll
+os/graphics	libstdcpp{00010000}.dso:	operator delete (void*)	impacts sflibopenvgrefimpl{000a0000}[10281ca6].dll
+os/graphics	libstdcpp{00010000}.dso:	operator delete[] (void*)	impacts sflibopenvgrefimpl{000a0000}[10281ca6].dll
+os/lbs	lbsnetprotocol{000a0000}.dso:	CLbsNetworkProtocolBase2::CancelExternalLocation(const TLbsNetSessionId&, int)	impacts lbssuplproxyprotocolmodule{000a0000}[102871ed].dll
+os/ossrv	libc{00010000}.dso:	posix_spawn	impacts libdbus-utils{000a0000}[20010154].dll
+os/ossrv	libc{00010000}.dso:	snprintf	impacts libdbus{000a0000}[20010153].dll
+os/ossrv	libdbus{000a0000}.dso:	_dbus_close	impacts libdbus-utils{000a0000}[20010154].dll
+os/ossrv	libdbus{000a0000}.dso:	_dbus_string_find_eol	impacts dbusdaemon{000a0000}[20010155].exe
+os/ossrv	libstdcpp{00010000}.dso:	operator delete (void*)	impacts libutils{000a0000}[200110ce].dll
+os/ossrv	libstdcpp{00010000}.dso:	operator delete[] (void*)	impacts libutils{000a0000}[200110ce].dll
+os/ossrv	libstdcpp{00010000}.dso:	operator new(unsigned)	impacts libutils{000a0000}[200110ce].dll
+os/ossrv	libstdcpp{00010000}.dso:	operator new[] (unsigned)	impacts libutils{000a0000}[200110ce].dll
+os/ossrv	libstdcpp{00010000}.dso:	std::__stl_throw_length_error(const char*)	impacts libutils{000a0000}[200110ce].dll

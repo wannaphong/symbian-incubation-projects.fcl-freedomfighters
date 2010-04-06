@@ -64,6 +64,8 @@ my $next_message_id = 1;
 my %packages_by_file;
 my %package_count_by_file;
 
+my $linktarget = "";
+my %visibility_problems;
 
 my $line;
 while ($line = <>)
@@ -77,15 +79,48 @@ while ($line = <>)
 		next;
 		}
 
+	# ... &#39;--soname=glxgridviewplugin{000a0000}[20000a03].dll&x39; ...
+	
+	if ($line =~ /--soname=(\S+)(.000a0000.)?(\S+)[&']/)
+		{
+		$linktarget = $1.$3;
+		next;
+		}
+
+	# Error: L6410W: Symbol CGlxGridViewPluginBase::AddCommandHandlersL() with non STV_DEFAULT visibility STV_HIDDEN should be resolved statically, cannot use definition in glxgridviewpluginbase{000a0000}.dso.
+  
+  if ($line =~ /Error: L6410W: Symbol (.*) with .*, cannot use definition in (\S+)./)
+  	{
+  	my $symbol = $1;
+  	my $dll = $2;
+		$symbol =~ s/&amp;/&/g;
+		$symbol =~ s/&gt;/>/g;
+		$symbol =~ s/&lt;/</g;
+  	$visibility_problems{"$current_package\t$dll:\t$symbol\timpacts $linktarget"} = 1;
+  	next;
+		}
+	# Error: L6218E: Undefined symbol RHTTPTransaction::Session() const (referred from caldavutils.o).
+	
+	if ($line =~ /Error: L6218E: Undefined symbol (.*) \(referred from (\S+)\)/)
+		{
+		my $symbol = $1;
+		my $impacted = $2;
+		$symbol =~ s/&amp;/&/g;
+		$symbol =~ s/&gt;/>/g;
+		$symbol =~ s/&lt;/</g;
+  	$visibility_problems{"$current_package\t???\t$symbol\timpacts $linktarget, $impacted"} = 1;
+		next;		
+		}
+
 	# &quot;J:/sf/app/commonemail/emailservices/emailclientapi/src/emailmailbox.cpp&quot;, line 49: Warning:  #830-D: function &quot;CBase::operator new(TUint, TLeave)&quot; has no corresponding operator delete (to be called if an exception is thrown during initialization of an allocated object)
 	
-	if ($line =~ /^&quot;(...*)&quot;, line (\d+): ([^:]+):\s+([^:]+): (.*)$/)
+	if ($line =~ /^("|&quot;)(...*)("|&quot;), line (\d+): ([^:]+):\s+([^:]+): (.*)$/)
 		{
-		my $filename = $1;
-		my $lineno = $2;
-		my $messagetype = $3;
-		my $message_id = $4;
-		my $message = $5;
+		my $filename = $2;
+		my $lineno = $4;
+		my $messagetype = $5;
+		my $message_id = $6;
+		my $message = $7;
 		
 		if ($messagetype eq "Warning" && !$warnings)
 			{
@@ -252,3 +287,8 @@ foreach my $file ( sort keys %error_count_by_file)
 	print "\n";
 	}
 
+print "\n\n====Visibility problems\n";
+foreach my $problem ( sort keys %visibility_problems)
+	{
+	print "$problem\n";
+	}
