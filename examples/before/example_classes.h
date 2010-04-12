@@ -23,3 +23,33 @@ class TClass1
 	int iA;
 	int iB;
 	};
+
+
+// Correct refenrencing of types defined inside a class Template
+// Symptom GCC : Error: Expected initializer before ' (class name)' 
+
+template <class T>
+class list {
+	public:
+	typedef unsigned int myType;
+	myType setSize (unsigned int x, unsigned int y);
+	};
+ 
+template<class T>	
+inline  list<T>::myType list<T>::setSize (unsigned int x, unsigned int y) //This line will throw the error
+
+	{  
+         return (x*y);
+	};
+
+
+
+// Need to use  \x to specify the character code directly
+char* literals()
+   {
+   char* string = "123£456";
+
+   return string;
+   }
+
+
