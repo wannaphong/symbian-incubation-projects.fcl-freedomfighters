@@ -63,6 +63,7 @@ my %all_message_counts;
 my $next_message_id = 1;
 my %packages_by_file;
 my %package_count_by_file;
+my %missing_files;
 
 my $linktarget = "";
 my %visibility_problems;
@@ -79,6 +80,17 @@ while ($line = <>)
 		next;
 		}
 
+	# Error: #5: cannot open source input file "lbs/epos_cposprivacynotifier.h":
+	
+	if ($line =~ /cannot open source input file (\"|&quot;)(.*)(\"|&quot)/)
+		{
+		my $missing_file = $2;
+		my $count = $missing_files{$missing_file};
+		$count = 0 if (!defined $count);
+		$missing_files{$missing_file} = $count + 1;
+		
+		# and fall through to the rest of the processing...
+		}
 	# ... &#39;--soname=glxgridviewplugin{000a0000}[20000a03].dll&x39; ...
 	
 	if ($line =~ /--soname=(\S+)(.000a0000.)?(\S+)[&']/)
@@ -291,4 +303,10 @@ print "\n\n====Visibility problems\n";
 foreach my $problem ( sort keys %visibility_problems)
 	{
 	print "$problem\n";
+	}
+
+print "\n\n====Missing files\n";
+foreach my $file ( sort {$missing_files{$b} <=> $missing_files{$a}} keys %missing_files)
+	{
+	printf "%-6d\t%s\n",$missing_files{$file}, $file;
 	}
