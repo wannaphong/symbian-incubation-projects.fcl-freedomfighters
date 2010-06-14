@@ -51,6 +51,7 @@ if (!GetOptions(
   }
 
 my $current_package = ""; 
+my $saved_filename = "";
 my %files;
 my %errors_by_file;
 my %error_count_by_file;
@@ -91,6 +92,18 @@ while ($line = <>)
 		my $messagetype = $3;
 		my $message = $4;
 		
+		# Heuristic for guessing the problem file for assembler issues
+		# 
+		if ($filename =~ /\\TEMP\\/i)
+			{
+			$filename = $saved_filename;
+			$lineno = 0;
+			}
+		else
+			{
+			$saved_filename = $filename;
+			}
+		
 		if ($messagetype eq "note")
 			{
 			next;		# ignore notes
@@ -98,6 +111,10 @@ while ($line = <>)
 		if ($messagetype eq "warning" && !$warnings)
 			{
 			next;		# ignore warnings
+			}
+		if ($message =~ /.*: No such file/ && !$warnings)
+			{
+			next;		# ignore "no such file", as these aren't likely to be GCC-specific
 			}
 		
 		$filename =~ s/^.://;		# remove drive letter
@@ -110,6 +127,7 @@ while ($line = <>)
 		$generic_message =~ s/'offsetof'/"offsetof"/;
 		$generic_message =~ s/'([^a-zA-Z])'/"\1"/g;	# don't catch ';' in next substitution
 		$generic_message =~ s/['`][^']+'/XX/g;	# suppress quoted bits of the actual instance
+		$generic_message =~ s/pasting ""(.*)"" and ""(.*)""/pasting XX and YY/g;	# suppress detail of "pasting" error
 		
 		my $message_id = $next_message_id;
 		if (!defined $message_ids{$generic_message})
