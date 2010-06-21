@@ -51,7 +51,10 @@ if (!GetOptions(
   }
 
 my $current_package = ""; 
+my $current_mmp = ""; 
 my $saved_filename = "";
+my $current_link_target;
+
 my %files;
 my %errors_by_file;
 my %error_count_by_file;
@@ -64,7 +67,87 @@ my %all_message_counts;
 my $next_message_id = 1;
 my %packages_by_file;
 my %package_count_by_file;
+my %missing_ELF_symbol;
+my %missing_export;
+my %excess_export;
 
+sub handle_message($$$$$)
+	{
+	my ($package,$filename,$lineno,$messagetype,$message) = @_;
+	
+	my $generic_message = "$messagetype: $message";
+	$generic_message =~ s/'offsetof'/"offsetof"/;
+	$generic_message =~ s/'([^a-zA-Z])'/"\1"/g;	# don't catch ';' in next substitution
+	$generic_message =~ s/['`][^']+'/XX/g;	# suppress quoted bits of the actual instance
+	$generic_message =~ s/pasting ""(.*)"" and ""(.*)""/pasting XX and YY/g;	# suppress detail of "pasting" error
+	
+	my $message_id = $next_message_id;
+	if (!defined $message_ids{$generic_message})
+		{
+		$next_message_id++;
+		$message_ids{$generic_message} = $message_id;
+		$messages_by_id{$message_id} = $generic_message;
+		$all_message_counts{$message_id} = 1;
+		}
+	else
+		{
+		$message_id = $message_ids{$generic_message};
+		$all_message_counts{$message_id} += 1;
+		}
+	my $instance = sprintf("%s:%d: %s-#%d", $filename, $lineno, $messagetype, $message_id);
+
+	my $packages = $packages_by_file{$filename};
+	if (!defined $packages)
+		{
+		$packages_by_file{$filename} = "\t$package\t";
+		$package_count_by_file{$filename} = 1;
+		}
+	else
+		{
+		if (index($packages,"\t$package\t") < 0)
+			{
+			$packages_by_file{$filename} .= "\t$package\t";
+			$package_count_by_file{$filename} += 1;
+			}
+		}
+	
+	if (defined $files{$instance})
+		{
+		# already seen this one
+		return;
+		}
+
+	if (!defined $unique_message_counts{$message_id})
+		{
+		$unique_message_counts{$message_id} = 1;
+		}
+	else
+		{
+		$unique_message_counts{$message_id} += 1;
+		}
+	$files{$instance} = $message;
+
+	if (!defined $files_by_message_id{$message_id})
+		{
+		$files_by_message_id{$message_id} = $filename;
+		}
+	else
+		{
+		$files_by_message_id{$message_id} .= "\n$filename";
+		}
+			
+	my $error = sprintf "%-5d: %s: %s", $lineno, $messagetype, $message;
+	if (!defined $errors_by_file{$filename})
+		{
+		$errors_by_file{$filename} = $error;
+		$error_count_by_file{$filename} = 1;
+		}
+	else
+		{
+		$errors_by_file{$filename} .= "\n$error";
+		$error_count_by_file{$filename} += 1;
+		}
+	}
 
 my $line;
 while ($line = <>)
@@ -77,6 +160,37 @@ while ($line = <>)
 		$current_package =~ s/_/\//;
 		next;
 		}
+	
+	# <recipe ... bldinf='M:/sf/os/bt/atext/group/bld.inf' ...
+	
+	if ($line =~ /^<recipe/o)
+		{
+		if ($line =~ / bldinf='..(\S+)' mmp='..(\S+)'/)
+			{
+			my $bldinf = $1;
+			$current_mmp = $2;
+			my ($root, $sf, $layer, $package, @rest) = split /\//, $bldinf;
+			$current_package = "$layer/$package";
+			}
+		next;
+		}
+
+	# remember context from various commands
+  if (substr($line,0,1) eq "+")
+  	{
+		if ($line =~ /g\+\+\.exe .* -o (\S+)\.sym /oi)
+			{
+			$current_link_target = $1;
+			next;
+			}
+		if ($line =~ /^elf2e32.exe .* --output=(\S+) /oi)
+			{
+			$current_link_target = $1;	# admittedly an E32 image file, but never mind...
+			next;
+			}
+		}
+
+	# M:/sf/os/kernelhwsrv/kernel/eka/drivers/soundsc/soundldd.cpp:2927: undefined reference to `__aeabi_uidiv'
 
 	# M:/epoc32/include/elements/nm_interfaces.h:255: warning: dereferencing type-punned pointer will break strict-aliasing rules
 	# M:/epoc32/include/f32file.h:2169: warning: invalid access to non-static data member 'TVolFormatParam::iUId'  of NULL object
@@ -85,13 +199,33 @@ while ($line = <>)
 	# M:/epoc32/include/elements/nm_signatures.h:496: error: provided for 'template<class TSIGNATURE, int PAYLOADATTRIBOFFSET, class TATTRIBUTECREATIONPOLICY, int PAYLOADBUFFERMAXLEN> class Messages::TSignatureWithPolymorphicPayloadMetaType'
 	# M:/epoc32/include/comms-infras/ss_nodemessages.h:301: error: invalid type in declaration before ';' token
 	
-	if ($line =~ /(^...*):(\d+): ([^:]+): (.*)$/)
+	if ($line =~ /(^...*):(\d+): (([^:]+): )?(.*)$/)
 		{
 		my $filename = $1;
 		my $lineno = $2;
-		my $messagetype = $3;
-		my $message = $4;
+		my $messagetype = $4;
+		my $message = $5;
+
+		$filename =~ s/^.://;		# remove drive letter
 		
+		$message =~ s/&amp;/&/g;
+		$message =~ s/&gt;/>/g;
+		$message =~ s/&lt;/</g;
+		$message =~ s/&#39;/'/g;
+
+		if ($messagetype eq "")
+			{
+			if ($message =~ /^undefined reference to .([^\']+).$/)
+				{
+				my $symbol = $1;
+  			$missing_ELF_symbol{"$current_package\t$filename $lineno\t$symbol\timpacts $current_link_target"} = 1;
+				$messagetype = "error";  # linker error, fall through to the rest of the processing
+				}
+			else
+				{
+				next;
+				}
+			}
 		# Heuristic for guessing the problem file for assembler issues
 		# 
 		if ($filename =~ /\\TEMP\\/i)
@@ -112,91 +246,58 @@ while ($line = <>)
 			{
 			next;		# ignore warnings
 			}
+		if ($messagetype eq "Warning" && $message =~ /No relevant classes found./)
+			{
+			next;		# ignore Qt code generation warnings
+			}
 		if ($message =~ /.*: No such file/ && !$warnings)
 			{
-			next;		# ignore "no such file", as these aren't likely to be GCC-specific
+			# next;		# ignore "no such file", as these aren't likely to be GCC-specific
 			}
-		
-		$filename =~ s/^.://;		# remove drive letter
-		
+
+		handle_message($current_package,$filename,$lineno,$messagetype,$message);	
+		next;
+		}
+
+  # Error: unrecognized option -mapcs
+
+	if ($line =~ /^Error: (.*)$/)
+		{
+		my $message = $1;
+		handle_message($current_package,$current_mmp,0,"Error",$message);	
+		next;
+		}
+	
+	# Elf2e32: Warning: New Symbol _ZN15DMMCMediaChangeC1Ei found, export(s) not yet Frozen
+	# elf2e32 : Error: E1036: Symbol _ZN21CSCPParamDBControllerD0Ev,_ZN21CSCPParamDBControllerD1Ev,_ZN21CSCPParamDBControllerD2Ev Missing from ELF File : M:/epoc32/release/armv5/udeb/scpdatabase.dll.sym.
+
+	if ($line =~ /^elf2e32 ?: ([^:]+): (.*)$/oi)
+		{
+		my $messagetype = $1;
+		my $message = $2;
+
 		$message =~ s/&amp;/&/g;
 		$message =~ s/&gt;/>/g;
 		$message =~ s/&lt;/</g;
-		$message =~ s/&#39;/'/g;
-		my $generic_message = "$messagetype: $message";
-		$generic_message =~ s/'offsetof'/"offsetof"/;
-		$generic_message =~ s/'([^a-zA-Z])'/"\1"/g;	# don't catch ';' in next substitution
-		$generic_message =~ s/['`][^']+'/XX/g;	# suppress quoted bits of the actual instance
-		$generic_message =~ s/pasting ""(.*)"" and ""(.*)""/pasting XX and YY/g;	# suppress detail of "pasting" error
 		
-		my $message_id = $next_message_id;
-		if (!defined $message_ids{$generic_message})
+		if ($message =~ /E1036: Symbol (\S+) Missing from ELF File : (.*)\.sym/i)
 			{
-			$next_message_id++;
-			$message_ids{$generic_message} = $message_id;
-			$messages_by_id{$message_id} = $generic_message;
-			$all_message_counts{$message_id} = 1;
-			}
-		else
-			{
-			$message_id = $message_ids{$generic_message};
-			$all_message_counts{$message_id} += 1;
-			}
-		my $instance = sprintf("%s:%d: %s-#%d", $filename, $lineno, $messagetype, $message_id);
-
-		my $packages = $packages_by_file{$filename};
-		if (!defined $packages)
-			{
-			$packages_by_file{$filename} = "\t$current_package\t";
-			$package_count_by_file{$filename} = 1;
-			}
-		else
-			{
-			if (index($packages,"\t$current_package\t") < 0)
+			my $symbol_list = $1;
+			my $linktarget = $2;
+			
+			foreach my $symbol (split /,/, $symbol_list)
 				{
-				$packages_by_file{$filename} .= "\t$current_package\t";
-				$package_count_by_file{$filename} += 1;
-				}
-			}
+				$missing_export{"$current_package\t???\t$symbol\timpacts $linktarget"} = 1;
+	  		}
+			next;	
+			}	
 		
-		if (defined $files{$instance})
+		if ($message =~ /New Symbol (\S+) found, export.s. not yet Frozen/oi)
 			{
-			# already seen this one
-			next;
+			my $symbol = $1;
+	  	$excess_export{"$current_package\t???\t$symbol\textra in $current_link_target"} = 1;
+	  	next;
 			}
-
-		if (!defined $unique_message_counts{$message_id})
-			{
-			$unique_message_counts{$message_id} = 1;
-			}
-		else
-			{
-			$unique_message_counts{$message_id} += 1;
-			}
-		$files{$instance} = $message;
-
-		if (!defined $files_by_message_id{$message_id})
-			{
-			$files_by_message_id{$message_id} = $filename;
-			}
-		else
-			{
-			$files_by_message_id{$message_id} .= "\n$filename";
-			}
-				
-		my $error = sprintf "%-5d: %s: %s", $lineno, $messagetype, $message;
-		if (!defined $errors_by_file{$filename})
-			{
-			$errors_by_file{$filename} = $error;
-			$error_count_by_file{$filename} = 1;
-			}
-		else
-			{
-			$errors_by_file{$filename} .= "\n$error";
-			$error_count_by_file{$filename} += 1;
-			}
-
-		next;
 		}
 	}
 
@@ -244,7 +345,9 @@ foreach my $file ( sort {$package_count_by_file{$b} <=> $package_count_by_file{$
 
 print "\n\n====Affected files by package\n";
 my $current_package = "";
+my $current_packagename;
 my @currentfiles;
+my @bugzilla_stuff;
 foreach my $file (sort keys %error_count_by_file)
 	{
 	my ($root, $sf, $layer, $packagename, @rest) = split /[\/\\]/, $file;
@@ -260,8 +363,12 @@ foreach my $file (sort keys %error_count_by_file)
 			printf "%-6d\t%s\n", scalar @currentfiles, $current_package;
 			print join("\n",@currentfiles);
 			print "\n";
+			my $bugreport = sprintf "\"%s\",%d,\"GCC compilation issues in %s\",\"GCC_SURGE\"", $current_package, scalar @currentfiles, $current_packagename;
+			$bugreport .= ",\"" . join("<br>", "Issues identified in the following source files:", @currentfiles) . "\"";
+			push @bugzilla_stuff, $bugreport;
 			}
 		$current_package = $package;
+		$current_packagename = $packagename;
 		@currentfiles = ();
 		}
 	my $filedetails = sprintf "\t%-6d\t%s", $error_count_by_file{$file}, $file;
@@ -270,6 +377,10 @@ foreach my $file (sort keys %error_count_by_file)
 printf "%-6d\t%s\n", scalar @currentfiles, $current_package;
 print join("\n",@currentfiles);
 print "\n";
+my $bugreport = sprintf "\"%s\",%d,\"GCC compilation issues in %s\",\"GCC_SURGE\"", $current_package, scalar @currentfiles, $current_packagename;
+$bugreport .= ',"' . join("<br>", "Issues identified in the following source files:", @currentfiles) . '"';
+push @bugzilla_stuff, $bugreport;
+
 
 print "\n\n====Messages by file\n";
 foreach my $file ( sort keys %error_count_by_file)
@@ -279,4 +390,96 @@ foreach my $file ( sort keys %error_count_by_file)
 	print join("\n\t", @details);
 	print "\n";
 	}
+
+my %visibility_summary;
+print "\n\n====Visibility problems - all\n";
+foreach my $problem ( sort (keys %missing_ELF_symbol, keys %missing_export, keys %excess_export))
+	{
+	print "$problem\n";
+	my ($package,$file,$symbol,$impact) = split /\t/, $problem;
+	my $key = "$symbol\t$package";
+	if (!defined $visibility_summary{$key})
+		{
+		$visibility_summary{$key} = 0;
+		}
+	$visibility_summary{$key} += 1;
+	}
+
+print "\n\n====Symbol visibility problems (>1 instance)\n";
+my $current_symbol = "";
+my $references = 0;
+my @packagelist = ();
+foreach my $problem ( sort keys %visibility_summary)
+	{
+	my ($symbol, $package) = split /\t/, $problem;
+	if ($symbol ne $current_symbol)
+		{
+		if ($current_symbol ne "" && $references > 1)
+			{
+			printf "%-6d\t%s\n", $references, $current_symbol;
+			printf "\t%-6d\t%s\n", scalar @packagelist, join(", ", @packagelist);
+			}
+		$current_symbol = $symbol;
+		$references = 0;
+		@packagelist = ();
+		}
+	$references += $visibility_summary{$problem};
+	push @packagelist, $package;
+	}
+if ($references > 1)
+	{
+	printf "%-6d\t%s\n", $references, $current_symbol;
+	printf "\t%-6d\t%s\n", scalar @packagelist, join(", ", @packagelist);
+	}
+
+print "\n\n====Missing symbols causing ELF link failures\n";
+foreach my $problem ( sort keys %missing_ELF_symbol)
+	{
+	print "$problem\n";
+	}
+
+
+my @simple_exports = ();
+my @vague_exports = ();
+foreach my $problem (keys %missing_export)
+	{
+	my ($package,$file,$symbol,$impact) = split /\t/, $problem;
+	if ($symbol =~ /^(_ZN\d|[^_]|__)/)
+		{
+		push @simple_exports, $problem;
+		}
+	else
+		{
+		push @vague_exports, $problem;
+		}
+	}
+printf "\n\n====Simple exports missing from linked ELF executables - (%d)\n", scalar @simple_exports;
+print join("\n", sort @simple_exports, "");
+printf "\n\n====Vague linkage exports missing from linked ELF executables - (%d)\n", scalar @vague_exports;
+print join("\n", sort @vague_exports, "");
+
+@simple_exports = ();
+@vague_exports = ();
+foreach my $problem (keys %excess_export)
+	{
+	my ($package,$file,$symbol,$impact) = split /\t/, $problem;
+	if ($symbol =~ /^(_ZN\d|_Z\d|[^_]|__)/)
+		{
+		push @simple_exports, $problem;
+		}
+	else
+		{
+		push @vague_exports, $problem;
+		}
+	}
+
+printf "\n\n====Simple unfrozen exports found in linked ELF executables - (%d)\n", scalar @simple_exports;
+print join("\n", sort @simple_exports, "");
+printf "\n\n====Vague linkage unfrozen exports found in linked ELF executables - (%d)\n", scalar @vague_exports;
+print join("\n", sort @vague_exports, "");
+
+
+print "\n\n====Bugzilla CSV input\n";
+print "\"product\",\"count\",\"short_desc\",\"keywords\",\"long_desc\"\n";
+print join("\n", @bugzilla_stuff, "");
 
