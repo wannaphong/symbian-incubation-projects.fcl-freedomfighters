@@ -191,6 +191,7 @@ while ($line = <>)
 		}
 
 	# M:/sf/os/kernelhwsrv/kernel/eka/drivers/soundsc/soundldd.cpp:2927: undefined reference to `__aeabi_uidiv'
+  # M:/epoc32/build/rawipnif/c_6f716cf505597250/rawip_dll/armv5/udeb/rawipmcpr.o:(.rodata+0x258): undefined reference to `non-virtual thunk to CAgentMetaConnectionProvider::GetIntSettingL(TDesC16 const&, unsigned long&, ESock::MPlatsecApiExt*)'
 
 	# M:/epoc32/include/elements/nm_interfaces.h:255: warning: dereferencing type-punned pointer will break strict-aliasing rules
 	# M:/epoc32/include/f32file.h:2169: warning: invalid access to non-static data member 'TVolFormatParam::iUId'  of NULL object
@@ -199,7 +200,7 @@ while ($line = <>)
 	# M:/epoc32/include/elements/nm_signatures.h:496: error: provided for 'template<class TSIGNATURE, int PAYLOADATTRIBOFFSET, class TATTRIBUTECREATIONPOLICY, int PAYLOADBUFFERMAXLEN> class Messages::TSignatureWithPolymorphicPayloadMetaType'
 	# M:/epoc32/include/comms-infras/ss_nodemessages.h:301: error: invalid type in declaration before ';' token
 	
-	if ($line =~ /(^...*):(\d+): (([^:]+): )?(.*)$/)
+	if ($line =~ /(^...*):(\d+|\(\S+\)): (([^:]+): )?(.*)$/)
 		{
 		my $filename = $1;
 		my $lineno = $2;
@@ -270,6 +271,7 @@ while ($line = <>)
 	
 	# Elf2e32: Warning: New Symbol _ZN15DMMCMediaChangeC1Ei found, export(s) not yet Frozen
 	# elf2e32 : Error: E1036: Symbol _ZN21CSCPParamDBControllerD0Ev,_ZN21CSCPParamDBControllerD1Ev,_ZN21CSCPParamDBControllerD2Ev Missing from ELF File : M:/epoc32/release/armv5/udeb/scpdatabase.dll.sym.
+  # elf2e32 : Error: E1053: Symbol _Z24ImplementationGroupProxyRi passed through '--sysdef' option is not at the specified ordinal in the DEF file M:/sf/mw/svgt/svgtopt/svgtplugin/BWINSCW/NPSVGTPLUGINu.DEF.
 
 	if ($line =~ /^elf2e32 ?: ([^:]+): (.*)$/oi)
 		{
@@ -296,6 +298,15 @@ while ($line = <>)
 			{
 			my $symbol = $1;
 	  	$excess_export{"$current_package\t???\t$symbol\textra in $current_link_target"} = 1;
+	  	next;
+			}
+
+    # Symbol _Z24ImplementationGroupProxyRi passed through '--sysdef' option is not at the specified ordinal in the DEF file M:/sf/mw/svgt/svgtopt/svgtplugin/BWINSCW/NPSVGTPLUGINu.DEF.
+		if ($message =~ /Symbol (\S+) passed .* DEF file .:(.*)\.$/oi)
+			{
+			my $symbol = $1;
+			my $deffile = $2;
+	  	$missing_export{"$current_package\t$deffile\t$symbol\tmisplaced in $current_link_target"} = 1;
 	  	next;
 			}
 		}
@@ -352,7 +363,7 @@ foreach my $file (sort keys %error_count_by_file)
 	{
 	my ($root, $sf, $layer, $packagename, @rest) = split /[\/\\]/, $file;
 	my $package = "$sf/$layer/$packagename";
-	if ($layer eq "include")
+	if ($sf eq "epoc32")
 		{
 		$package = "$sf/$layer";
 		}
@@ -441,10 +452,76 @@ foreach my $problem ( sort keys %missing_ELF_symbol)
 
 my @simple_exports = ();
 my @vague_exports = ();
-foreach my $problem (keys %missing_export)
+my $last_elffile = "";
+my @last_objdump = ();
+foreach my $problem (sort {substr($a,-12) cmp substr($b,-12)} keys %missing_export)
 	{
 	my ($package,$file,$symbol,$impact) = split /\t/, $problem;
-	if ($symbol =~ /^(_ZN\d|[^_]|__)/)
+	if ($impact =~ /impacts ..\/(.*)/)
+		{
+		my $e32file = $1;
+		my $elffile = $e32file . ".sym";
+		my $objdumplist = $elffile . ".txt";
+		my @instances = ();
+		if (-e $elffile && $last_elffile ne $elffile)
+			{
+			# cache miss
+			if (-e $objdumplist && -s $objdumplist > 0)
+				{
+				open OBJDUMPLIST, "<$objdumplist";
+				@last_objdump = <OBJDUMPLIST>;
+				close OBJDUMPLIST;
+				}
+			else
+				{
+				open OBJDUMP, "arm-none-symbianelf-objdump --sym $elffile |";
+				@last_objdump = <OBJDUMP>;
+				close OBJDUMP;
+				open OBJDUMPLIST, ">$objdumplist" or print STDERR "Failed to write $objdumplist: $!\n";
+				print OBJDUMPLIST @last_objdump;
+				close OBJDUMPLIST;
+				}
+			$last_elffile = $elffile;
+			}
+		foreach my $line (@last_objdump)
+			{
+			if (index($line,$symbol) >= 0)
+				{
+				push @instances, $line;
+				}
+			}
+		close OBJDUMP;
+		
+		printf STDERR "Checked %s for %s, found %d instances\n", $elffile, $symbol, scalar @instances;
+		print STDERR join("\n", @instances, "");
+		
+		if (scalar @instances == 0)
+			{
+			$problem = "$package\t$elffile\t$symbol\tmissing\t$file";
+			}
+		if (scalar @instances == 1)
+			{
+			my $flags = "";
+			if ($instances[0] =~ /^.{8} (.{7}) /)
+				{
+				$flags = " (".$1.")";
+				$flags =~ s/ //g;	# throw away the spaces
+				}
+			if (index($instances[0], ".hidden") > 0)
+				{
+				$problem = "$package\t$elffile\t$symbol\thidden$flags\t$file";
+				}
+			else
+				{
+				$problem = "$package\t$elffile\t$symbol\tvisible$flags\t$file";
+				}
+			}
+		if (scalar @instances > 1)
+			{
+			$problem = "$package\t$elffile\t$symbol\trepeated\t$file";
+			}
+		}
+	if ($symbol =~ /^(_ZNK?\d|[^_]|__)/)
 		{
 		push @simple_exports, $problem;
 		}
@@ -463,7 +540,7 @@ print join("\n", sort @vague_exports, "");
 foreach my $problem (keys %excess_export)
 	{
 	my ($package,$file,$symbol,$impact) = split /\t/, $problem;
-	if ($symbol =~ /^(_ZN\d|_Z\d|[^_]|__)/)
+	if ($symbol =~ /^(_ZNK?\d|_Z\d|[^_]|__)/)
 		{
 		push @simple_exports, $problem;
 		}
@@ -472,7 +549,6 @@ foreach my $problem (keys %excess_export)
 		push @vague_exports, $problem;
 		}
 	}
-
 printf "\n\n====Simple unfrozen exports found in linked ELF executables - (%d)\n", scalar @simple_exports;
 print join("\n", sort @simple_exports, "");
 printf "\n\n====Vague linkage unfrozen exports found in linked ELF executables - (%d)\n", scalar @vague_exports;
