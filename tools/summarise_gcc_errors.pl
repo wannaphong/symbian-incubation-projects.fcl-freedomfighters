@@ -483,9 +483,11 @@ foreach my $problem (sort {substr($a,-12) cmp substr($b,-12)} keys %missing_expo
 				}
 			$last_elffile = $elffile;
 			}
+		my $length = length($symbol);
 		foreach my $line (@last_objdump)
 			{
-			if (index($line,$symbol) >= 0)
+			chomp $line;
+			if (substr($line,-$length) eq $symbol)
 				{
 				push @instances, $line;
 				}
