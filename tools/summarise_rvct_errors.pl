@@ -33,6 +33,7 @@ Options:
 
 -warnings      process warnings as well as errors
 -verbose       list the files associated with each error
+-ignore EXP    ignore input lines which match EXP
 
 EOF
   exit (1);  
@@ -40,11 +41,13 @@ EOF
 
 my $warnings = 0;
 my $verbose = 0;
+my $ignore_exp = "";
 
 # Analyse the rest of command-line parameters
 if (!GetOptions(
     "w|warnings" => \$warnings,
     "v|verbose" => \$verbose,
+    "ignore=s" => \$ignore_exp,
     ))
   {
   Usage("Invalid argument");
@@ -80,11 +83,14 @@ while ($line = <>)
 		next;
 		}
 
+	next if ($ignore_exp ne "" && $line =~ /$ignore_exp/io);
+	
 	# Error: #5: cannot open source input file "lbs/epos_cposprivacynotifier.h":
 	
 	if ($line =~ /cannot open source input file (\"|&quot;)(.*)(\"|&quot)/)
 		{
 		my $missing_file = $2;
+		$missing_file =~ s/\\/\//g;	# Unix file separators please
 		my $count = $missing_files{$missing_file};
 		$count = 0 if (!defined $count);
 		$missing_files{$missing_file} = $count + 1;
@@ -140,6 +146,7 @@ while ($line = <>)
 			}
 		
 		$filename =~ s/^.://;		# remove drive letter
+		$filename =~ s/\\/\//g;	# Unix file separators please
 		
 		$message =~ s/&quot;/\"/g;
 		$message =~ s/&amp;/&/g;

@@ -33,6 +33,7 @@ Options:
 
 -warnings      process warnings as well as errors
 -verbose       list the files associated with each error
+-notfound      process "no such file" errors as well as compilation errors
 
 EOF
   exit (1);  
@@ -40,11 +41,13 @@ EOF
 
 my $warnings = 0;
 my $verbose = 0;
+my $notfound = 0;
 
 # Analyse the rest of command-line parameters
 if (!GetOptions(
     "w|warnings" => \$warnings,
     "v|verbose" => \$verbose,
+    "notfound" => \$notfound,
     ))
   {
   Usage("Invalid argument");
@@ -251,9 +254,9 @@ while ($line = <>)
 			{
 			next;		# ignore Qt code generation warnings
 			}
-		if ($message =~ /.*: No such file/ && !$warnings)
+		if ($message =~ /.*: No such file/ && !$notfound)
 			{
-			# next;		# ignore "no such file", as these aren't likely to be GCC-specific
+			next;		# ignore "no such file", as these aren't likely to be GCC-specific
 			}
 
 		handle_message($current_package,$filename,$lineno,$messagetype,$message);	
